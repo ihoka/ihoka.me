@@ -1,91 +1,42 @@
 ---
 layout: cv
-title: Isaac Newtons's CV
+title: Istvan Hoka
 ---
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
+
+# Istvan Hoka
+
+Software Architect, Principal Engineer, startup CTO
 
 <div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
+    <a href="mailto:istvan.hoka@gmail.com">istvan.hoka@gmail.com</a>
+    |
+    <a href="https://github.com/ihoka">github.com/ihoka</a>
+    |
+    <a href="https://linkedin.com/in/ihoka">LinkedIn</a>
 </div>
 
+## About
 
-## Currently
+### Skills
 
-Standing on the shoulders of giants
+## Work experience
 
-### Specialized in
+`Apr 2022 - Present`
+__Software Solutions Architect__ (permanent), notonthehighstreet.com, London
 
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
+`Feb 2020 - Apr 2022`
+__Principal Engineer__ (permanent), notonthehighstreet.com, London
 
+`Jun 2018 - Jan 2020`
+__Senior Software Engineer__ (contract), notonthehighstreet.com, London
 
-### Research interests
-
-Cooling, power series, optics, alchemy, planetary motions, apples.
-
+- Ruby on Rails
 
 ## Education
 
-`1654-1660`
-__The King's School, Grantham.__
-
-`June 1661 - now`
-__Trinity College, Cambridge__
-
-- Sizar
-
-`1667 - death`
-__Trinity College, Cambridge__
-
-- Fellow
-
-
-
-## Awards
-
-`2012`
-President, *Royal Society*, London, UK
-
-Associate, *French Academy of Science*, Paris, France
-
-
-
-## Publications
-
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-### Journals
-
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
-
-`1669`
-Lectiones opticæ.
-
-etc. etc. etc.
-
-### Patents
-
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
-
-
-## Occupation
-
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
-
-
+`2000 - 2005`
+__BSE Automation and Computer Science__, Technical University of Cluj-Napoca, Romania
 
 <!-- ### Footer
 
-Last updated: May 2013 -->
-
-
+Last updated: September 2022 -->
