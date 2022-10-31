@@ -32,6 +32,9 @@ __Senior Software Engineer__ (contract), notonthehighstreet.com, London
 
 - Ruby on Rails
 
+`Mar 2015 - Mar 2018`
+__CTO__ (contract, Aissac), Digital Takeover, Dallas, TX (remote)
+
 `Aug 2011 - Mar 2015`
 __CTO__ (contract, Aissac), ZenCash.com, Dallas, TX (remote)
 
@@ -43,7 +46,7 @@ ZenCash was an "Accounts Receivable CRM", a tool meant to help B2B collect payme
 - Web application frontend for customers and back-office management.
 - Provided technical leadership, architecture and implementation (in part) for all systems and capabilities.
 
-After a good run of about 4 years, ZenCash had run its course, having failed to achieve product-market fit, and the investors decided to stop financing it.
+After a good run of about 4 years, ZenCash had run its course, having failed to achieve product/market fit, and the investors decided to stop financing it.
 
 Skills: technical leadership, architecture, EventMachine (Ruby), RabbitMQ, Ruby on Rails, Ember.js, Jenkins, Chef (EngineYard), AWS (various services).
 
@@ -68,7 +71,7 @@ __Lead Developer__ (contract, Aissac), Blinksale.com, Dallas, TX (remote)
 
 First contact with the new owner of Blinksale, hired as lead developer.
 
-`2005`
+`Sep 2005`
 __Founder__, Aissac
 
 Co-founded Aissac SRL in Cluj-Napoca, Romania, a small development shop focused on web development, using Ruby on Rails as the primary development framework. Overtime I became the sole owner of the business.
