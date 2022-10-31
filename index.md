@@ -32,6 +32,39 @@ __Senior Software Engineer__ (contract), notonthehighstreet.com, London
 
 - Ruby on Rails
 
+`Aug 2011 - Mar 2015`
+__CTO__ (contract, Aissac), ZenCash.com, Dallas, TX (remote)
+
+ZenCash was an "Accounts Receivable CRM", a tool meant to help B2B collect payment faster.
+
+After a good run of about 4 years, ZenCash had run its course, having failed to achieve product-market fit, and the investors decided to stop financing it.
+
+`Jan 2011 - Dec 2018`
+__CTO__ (contract, Aissac), Blinksale.com, Dallas, TX (remote)
+
+Blinksale is an invoicing application, one of the first webapps built with Ruby on Rails.
+Through my consulting company, Aissac, I acted as the leader in technical strategy and development.
+
+- Hired and trained additional developers.
+- Migrated application from VPS hosting to PaaS (AWS + EngineYard).
+- Implemented CI/CD, backfilled integration and unit testing.
+- New features added: BlinkPay (Stripe-like merchant solution), Estimates.
+- Provided technical leadership, architecture for all new capabilities.
+- Re-built the invoincing platform with an API-first design, and modern Ember.js web frontend.
+- Assisted with selling Blinksale to a new owner.
+
+Skills: technical leadership, architecture, Ruby on Rails, Ember.js, Jenkins, Chef (EngineYard), AWS (various services).
+
+`Jan 2010 - Dec 2010`
+__Lead Developer__ (contract, Aissac), Blinksale.com, Dallas, TX (remote)
+
+First contact with the new owner of Blinksale, hired as lead developer.
+
+`2005`
+__Founder__, Aissac
+
+Co-founded Aissac SRL in Cluj-Napoca, Romania, a small development shop focused on web development, using Ruby on Rails as the primary development framework. Overtime I became the sole owner of the business.
+
 ## Education
 
 `2000 - 2005`
