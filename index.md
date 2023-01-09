@@ -17,6 +17,16 @@ Software Architect, Principal Engineer, startup CTO
 
 ## About
 
+Software architect, Ruby Developer, startup CTO, with 12 years leadership/mentoring experience, and over 17 years software engineering experience.
+
+I started programming at age 12 with BASIC on my Z80 computer. In high school I learned Pascal and C, and built my first games with the Allegro game programming library in C. Learned Java, HMTL, CSS in college and got my first job as a junior web developer. Started my company in 2005 and working as a freelance contractor making web applications. Discovered Ruby on Rails in 2006 and fell in love with it.
+
+I have acted as a consultant (contractor), own product developer, and employee. Over time I have planned product roadmaps, architected systems, hired and trained technical teams, and done full stack development. I have acted as the CTO for various US-based companies (partners and clients): Blinksale, ZenCash (the Receivables CRM, not the cryptocurrency), Digital Takeover.
+
+Although software architecture has been an important component in all my experience, I have lately been focused more on software architecture rather than engineering. My most extensive experience as an engineer is with Ruby / Rails for full-stack apps or APIs, and Javascript / Ember.js for frontend development. Over time, I have extended to learning React, Typescript and Python.
+
+At core I am a problem solver. I love great code and a beautifully crafted piece of software, but ultimately it is only useful if it solves a valid problem.
+
 ### Skills
 
 ## Work experience
