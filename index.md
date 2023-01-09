@@ -24,13 +24,28 @@ Software Architect, Principal Engineer, startup CTO
 `Apr 2022 - Present`
 __Software Solutions Architect__ (permanent), notonthehighstreet.com, London
 
+Transitioned from the role of Principal Engineer after the departure of the Head of Engineering, after it became apparent that the organisation was in need of a more structured architecture function.
+
+- Started establishing a more formal architecture framework for the tech team.
+- Continued developing and evolving solution designs for the organisation.
+  - Product Catalogue: replatform from legacy system to become the aggregation point of product data - solution design, implementation governance.
+  - Product Information Management: introduce new capabilities to enable better understanding of product taxonomy when indexing, and allow granular stock management - solution design, implemetation governance.
+  - Guest checkout: allow unregistered uses to place orders - solution design and implementation governance.
+
 `Feb 2020 - Apr 2022`
 __Principal Engineer__ (permanent), notonthehighstreet.com, London
+
+- New payment method ApplePay: architecture, technical design and implementation governance.
+- New stock management capability: architecture, technical design and implementation governance.
+- Rethink approach to asynchronous messaging, from a home-grown solution, to leveraging more of the AWS infrastructure, and reduce coupling.
 
 `Jun 2018 - Jan 2020`
 __Senior Software Engineer__ (contract), notonthehighstreet.com, London
 
-- Ruby on Rails
+Hired initially as a senior Ruby engineer to work on payment systems, became de-facto tech lead of the Payment team.
+
+- Lead re-platforming projects for Basket and Checkout - extract systems from monolithic architecture into domain aligned components. Lead design and implementation for APIs, microservices based on Node.js, GraphQL.
+- Completed previously started implementation of gift card capability, using GiveX as an external provider.
 
 `Mar 2015 - Mar 2018`
 __CTO__ (contract, Aissac), Digital Takeover, Dallas, TX (remote)
