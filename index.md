@@ -31,6 +31,21 @@ At core I am a problem solver. I love great code and a beautifully crafted piece
 
 ### Skills
 
+* Software architecture
+* Technical leadership
+* Backend engineering
+* (Web) frontend engineering
+* E-commerce domain
+* Ruby
+* Ruby on Rails
+* Javascript
+* Node.js
+* SQL
+* NoSQL
+* Ember.js
+* React.js
+* Python
+
 ## Work experience
 
 `Apr 2022 - Present`
@@ -38,27 +53,27 @@ __Software Solutions Architect__ (permanent), notonthehighstreet.com, London
 
 Transitioned from the role of Principal Engineer after the departure of the Head of Engineering, after it became apparent that the organisation was in need of a more structured architecture function.
 
-- Started establishing a more formal architecture framework for the tech team.
-- Continued developing and evolving solution designs for the organisation.
-  - Product Catalogue: replatform from legacy system to become the aggregation point of product data - target architecture, solution design, implementation governance.
-  - Product Information Management: introduce new capabilities to enable better understanding of product taxonomy when indexing, and allow granular stock management - solution design, implemetation governance.
-  - Guest checkout: allow unregistered uses to place orders - solution design and implementation governance.
+* Started establishing a more formal architecture framework for the tech team.
+* Continued developing and evolving solution designs for the organisation.
+  * Product Catalogue: replatform from legacy system to become the aggregation point of product data - target architecture, solution design, implementation governance.
+  * Product Information Management: introduce new capabilities to enable better understanding of product taxonomy when indexing, and allow granular stock management - solution design, implemetation governance.
+  * Guest checkout: allow unregistered uses to place orders - solution design and implementation governance.
 
 `Feb 2020 - Apr 2022`
 __Principal Engineer__ (permanent), notonthehighstreet.com, London
 
-- New payment method ApplePay: target architecture, solution design and implementation governance.
-- New stock management capability: target architecture, solution design and implementation governance.
-- Rethink approach to asynchronous messaging, from a home-grown solution, to leveraging more of the AWS infrastructure, and reduce coupling.
+* New payment method ApplePay: target architecture, solution design and implementation governance.
+* New stock management capability: target architecture, solution design and implementation governance.
+* Rethink approach to asynchronous messaging, from a home-grown solution, to leveraging more of the AWS infrastructure, and reduce coupling.
 
 `Jun 2018 - Jan 2020`
 __Senior Software Engineer__ (contract), notonthehighstreet.com, London
 
 Hired initially as a senior Ruby engineer to work on payment systems, became de-facto tech lead of the Payment team.
 
-- Lead re-platforming projects for Basket and Checkout - extract systems from monolithic architecture into domain aligned components. Lead design and implementation for APIs, microservices based on Node.js, GraphQL.
-- Troubleshooted and fixed a compound precision and rounding problem in the tax system, which reduced the companies tax liability significantly.
-- Completed previously started implementation of gift card capability, using GiveX as an external provider.
+* Lead re-platforming projects for Basket and Checkout - extract systems from monolithic architecture into domain aligned components. Lead design and implementation for APIs, microservices based on Node.js, GraphQL.
+* Troubleshooted and fixed a compound precision and rounding problem in the tax system, which reduced the companies tax liability significantly.
+* Completed previously started implementation of gift card capability, using GiveX as an external provider.
 
 Skills: Ruby on Rails, Node.js, GraphQL, DynamoDB, CloudFormation, Docker, Ansible.
 
@@ -70,11 +85,11 @@ __CTO__ (contract, Aissac), ZenCash.com, Dallas, TX (remote)
 
 ZenCash was an "Accounts Receivable CRM", a tool meant to help B2B collect payment from their clients faster, by means of a follow-up plan over email, phone and the post. ZenCash was started as a spin-off by the same owners as Blinksale. Through my consulting company, Aissac, I acted as the leader in technical strategy and development.
 
-- Hired and trained development team.
-- High-throughput event based system, custom API bindings for 7 invoicing applications, for highly efficient data synchronisation.
-- 3rd party integrations for print, post and phone solution providers.
-- Web application frontend for customers and back-office management.
-- Provided technical leadership, architecture and implementation (in part) for all systems and capabilities.
+* Hired and trained development team.
+* High-throughput event based system, custom API bindings for 7 invoicing applications, for highly efficient data synchronisation.
+* 3rd party integrations for print, post and phone solution providers.
+* Web application frontend for customers and back-office management.
+* Provided technical leadership, architecture and implementation (in part) for all systems and capabilities.
 
 Skills: technical leadership, architecture, EventMachine (Ruby), RabbitMQ, Ruby on Rails, Ember.js, Jenkins, Chef (EngineYard), AWS (various services).
 
@@ -84,13 +99,13 @@ __CTO__ (contract, Aissac), Blinksale.com, Dallas, TX (remote)
 Blinksale is an invoicing application, one of the first webapps built with Ruby on Rails.
 Through my consulting company, Aissac, I acted as the leader in technical strategy and development.
 
-- Hired and trained additional developers.
-- Migrated application from VPS hosting to PaaS (AWS + EngineYard).
-- Implemented CI/CD, backfilled integration and unit testing.
-- New features added: BlinkPay (Stripe-like merchant solution, complete with underwriting process, zero-configuration for payments), Estimates.
-- Provided technical leadership, architecture for all new capabilities.
-- Re-built the invoincing platform with an API-first design, and modern Ember.js web frontend.
-- Assisted with selling Blinksale to a new owner.
+* Hired and trained additional developers.
+* Migrated application from VPS hosting to PaaS (AWS + EngineYard).
+* Implemented CI/CD, backfilled integration and unit testing.
+* New features added: BlinkPay (Stripe-like merchant solution, complete with underwriting process, zero-configuration for payments), Estimates.
+* Provided technical leadership, architecture for all new capabilities.
+* Re-built the invoincing platform with an API-first design, and modern Ember.js web frontend.
+* Assisted with selling Blinksale to a new owner.
 
 Skills: technical leadership, architecture, Ruby on Rails, Ember.js, Jenkins, Chef (EngineYard), AWS (various services).
 
@@ -99,7 +114,7 @@ __Lead Developer__ (contract, Aissac), Blinksale.com, Dallas, TX (remote)
 
 First contact with the new owner of Blinksale, hired as lead developer.
 
-- Ruby on Rails development
+* Ruby on Rails development
 
 `Sep 2005`
 __Founder__, Aissac
