@@ -10,9 +10,11 @@ Software Architect, Principal Engineer, startup CTO
 <div id="webaddress">
     <a href="mailto:istvan.hoka@gmail.com">istvan.hoka@gmail.com</a>
     |
-    <a href="https://github.com/ihoka">github.com/ihoka</a>
+    <a href="https://linkedin.com/in/ihoka">linkedin.com/in/ihoka</a>
     |
-    <a href="https://linkedin.com/in/ihoka">LinkedIn</a>
+    <a href="tel:+40740000523">+40 740 000523</a>
+    |
+    London, United Kingdom
 </div>
 
 ## About
@@ -73,8 +75,6 @@ ZenCash was an "Accounts Receivable CRM", a tool meant to help B2B collect payme
 - 3rd party integrations for print, post and phone solution providers.
 - Web application frontend for customers and back-office management.
 - Provided technical leadership, architecture and implementation (in part) for all systems and capabilities.
-
-After a good run of about 4 years, ZenCash had run its course, having failed to achieve product/market fit, and the investors decided to stop financing it.
 
 Skills: technical leadership, architecture, EventMachine (Ruby), RabbitMQ, Ruby on Rails, Ember.js, Jenkins, Chef (EngineYard), AWS (various services).
 
