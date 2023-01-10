@@ -21,9 +21,9 @@ Software architect, Ruby Developer, startup CTO, with 12 years leadership/mentor
 
 I started programming at age 12 with BASIC on my Z80 computer. In high school I learned Pascal and C, and built my first games with the Allegro game programming library in C. Learned Java, HMTL, CSS in college and got my first job as a junior web developer. Started my company in 2005 and working as a freelance contractor making web applications. Discovered Ruby on Rails in 2006 and fell in love with it.
 
-I have acted as a consultant (contractor), own product developer, and employee. Over time I have planned product roadmaps, architected systems, hired and trained technical teams, and done full stack development. I have acted as the CTO for various US-based companies (partners and clients): Blinksale, ZenCash (the Receivables CRM, not the cryptocurrency), Digital Takeover.
+I have acted as a consultant (contractor), own product developer, and employee. Over time I have planned product roadmaps, architected systems, hired and trained technical teams, and done full stack web development. I have acted as the CTO for various US-based companies (partners and clients): Blinksale, ZenCash (the Receivables CRM, not the cryptocurrency), Digital Takeover.
 
-Although software architecture has been an important component in all my experience, I have lately been focused more on software architecture rather than engineering. My most extensive experience as an engineer is with Ruby / Rails for full-stack apps or APIs, and Javascript / Ember.js for frontend development. Over time, I have extended to learning React, Typescript and Python.
+Although software architecture has been an important component in all my experience, I have lately been focused more on software architecture rather than engineering. My most extensive experience as an engineer is with Ruby / Rails for full-stack apps or APIs, and Javascript / Ember.js for frontend development. Over time, I have extended to learning React.js, Typescript and Python.
 
 At core I am a problem solver. I love great code and a beautifully crafted piece of software, but ultimately it is only useful if it solves a valid problem.
 
@@ -38,15 +38,15 @@ Transitioned from the role of Principal Engineer after the departure of the Head
 
 - Started establishing a more formal architecture framework for the tech team.
 - Continued developing and evolving solution designs for the organisation.
-  - Product Catalogue: replatform from legacy system to become the aggregation point of product data - solution design, implementation governance.
+  - Product Catalogue: replatform from legacy system to become the aggregation point of product data - target architecture, solution design, implementation governance.
   - Product Information Management: introduce new capabilities to enable better understanding of product taxonomy when indexing, and allow granular stock management - solution design, implemetation governance.
   - Guest checkout: allow unregistered uses to place orders - solution design and implementation governance.
 
 `Feb 2020 - Apr 2022`
 __Principal Engineer__ (permanent), notonthehighstreet.com, London
 
-- New payment method ApplePay: architecture, technical design and implementation governance.
-- New stock management capability: architecture, technical design and implementation governance.
+- New payment method ApplePay: target architecture, solution design and implementation governance.
+- New stock management capability: target architecture, solution design and implementation governance.
 - Rethink approach to asynchronous messaging, from a home-grown solution, to leveraging more of the AWS infrastructure, and reduce coupling.
 
 `Jun 2018 - Jan 2020`
@@ -55,7 +55,10 @@ __Senior Software Engineer__ (contract), notonthehighstreet.com, London
 Hired initially as a senior Ruby engineer to work on payment systems, became de-facto tech lead of the Payment team.
 
 - Lead re-platforming projects for Basket and Checkout - extract systems from monolithic architecture into domain aligned components. Lead design and implementation for APIs, microservices based on Node.js, GraphQL.
+- Troubleshooted and fixed a compound precision and rounding problem in the tax system, which reduced the companies tax liability significantly.
 - Completed previously started implementation of gift card capability, using GiveX as an external provider.
+
+Skills: Ruby on Rails, Node.js, GraphQL, DynamoDB, CloudFormation, Docker, Ansible.
 
 `Mar 2015 - Mar 2018`
 __CTO__ (contract, Aissac), Digital Takeover, Dallas, TX (remote)
@@ -95,6 +98,8 @@ Skills: technical leadership, architecture, Ruby on Rails, Ember.js, Jenkins, Ch
 __Lead Developer__ (contract, Aissac), Blinksale.com, Dallas, TX (remote)
 
 First contact with the new owner of Blinksale, hired as lead developer.
+
+- Ruby on Rails development
 
 `Sep 2005`
 __Founder__, Aissac
