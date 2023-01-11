@@ -80,6 +80,13 @@ Skills: Ruby on Rails, Node.js, GraphQL, DynamoDB, CloudFormation, Docker, Ansib
 `Mar 2015 - Mar 2018`
 __CTO__ (contract, Aissac), Digital Takeover, Dallas, TX (remote)
 
+Media/content startup, leveraging Facebook heaviliy to drive traffic, Digital Takeover owned 2 web properties driving 50 million monthly visitors at its height.
+
+* Online publishing workflow tool with real-time collaboration: architecture, design, implementation. Ruby on Rails, Ember.js, MySQL, Wordpress.
+* Real-time KPI dashboard, aggregating multiple sources of data: traffic, revenue, social engagement. Architecture, design, implementation. Ruby on Rails, Ember.js, MySQL, Facebook Graph API, Google Analytics, advertiser APIs.
+* Web API serving up to 50MM visitors/month to enhance online magazine with social features: voting, popularity. Architecture, implementation. Ruby on Rails.
+* Custom online magazine theme for Wordpress. Implementation.
+
 `Aug 2011 - Mar 2015`
 __CTO__ (contract, Aissac), ZenCash.com, Dallas, TX (remote)
 
