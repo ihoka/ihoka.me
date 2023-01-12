@@ -14,12 +14,12 @@ Software Architect, Principal Engineer, startup CTO
     |
     <a href="tel:+40740000523">+40 740 000523</a>
     |
-    London, United Kingdom
+    London, UK
 </div>
 
 ## About
 
-Software architect, Ruby Developer, startup CTO, with 12 years leadership/mentoring experience, and over 17 years software engineering experience.
+Software Architect, Principal Engineer, startup CTO, with 12 years leadership/mentoring experience, and over 17 years software engineering experience.
 
 I started programming at age 12 with BASIC on my Z80 computer. In high school I learned Pascal and C, and built my first games with the Allegro game programming library in C. Learned Java, HMTL, CSS in college and got my first job as a junior web developer. Started my company in 2005 and working as a freelance contractor making web applications. Discovered Ruby on Rails in 2006, fell in love with it; it is what kickstarted my professional career.
 
@@ -31,20 +31,23 @@ At core I am a problem solver. I love great code and a beautifully crafted piece
 
 ### Skills
 
+Somewhat ranked:
+
 * Software architecture
 * Technical leadership
 * Backend engineering
 * (Web) frontend engineering
 * E-commerce domain
-* Ruby
-* Ruby on Rails
-* Javascript
+* Accounting domain
+* Ruby, Ruby on Rails
+* JavaScript
+* Ember.js
 * Node.js
 * SQL
 * NoSQL
-* Ember.js
 * React.js
 * Python
+* TypeScript
 
 ## Work experience
 
