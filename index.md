@@ -31,20 +31,21 @@ At core I am a problem solver. I love great code and a beautifully crafted piece
 
 ### Skills
 
-Somewhat ranked:
+Somewhat ranked, based on experience:
 
 * Software architecture
 * Technical leadership
 * Backend engineering
 * (Web) frontend engineering
+* Ruby, Ruby on Rails
 * E-commerce domain
 * Accounting domain
-* Ruby, Ruby on Rails
 * JavaScript
 * Ember.js
 * Node.js
 * SQL
 * NoSQL
+* Docker
 * React.js
 * Python
 * TypeScript
