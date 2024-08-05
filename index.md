@@ -36,28 +36,41 @@ Somewhat ranked, based on experience:
 * Software architecture
 * Technical leadership
 * Backend engineering
-* (Web) frontend engineering
 * Ruby, Ruby on Rails
+* (Web) frontend engineering
+* Generative AI engineering
 * E-commerce domain
 * Accounting domain
 * JavaScript
 * Ember.js
 * Node.js
+* Python
 * SQL
 * NoSQL
 * Docker
 * React.js
-* Python
 * TypeScript
 
 ## Work experience
 
-`Apr 2022 - Present`
+`May 2023 - Present`
+__Principal Engineer__ (permanent), Builder.ai, London
+
+Working across 3 engineering teams focused on the Building Blocks (reusable softare components in the Builder catalog) platform.
+
+* Defined and implemented versioning and maintenance policy for Blocks
+* Designed and lead implementation of:
+  * CI/CD solution servicing 500+ software components (Ruby & React).
+  * new-Block generation solution for the Block assembly process.
+  * Blocks Package manager for Ruby and React components.
+  * Blocks Maintainance tooling platform using Generative AI.
+
+`Apr 2022 - Apr 2023`
 __Software Solutions Architect__ (permanent), notonthehighstreet.com, London
 
-Transitioned from the role of Principal Engineer after the departure of the Head of Engineering, after it became apparent that the organisation was in need of a more structured architecture function.
+Transitioned from the role of Principal Engineer after the departure of the Head of Engineering, as it became apparent that the organisation was in need of a more structured architecture function.
 
-* Started establishing a more formal architecture framework for the tech team.
+* Established a more structured architecture framework for the tech team.
 * Continued developing and evolving solution designs for the organisation.
   * Product Catalogue: replatform from legacy system to become the aggregation point of product data - target architecture, solution design, implementation governance.
   * Product Information Management: introduce new capabilities to enable better understanding of product taxonomy when indexing, and allow granular stock management - solution design, implemetation governance.
