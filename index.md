@@ -38,6 +38,7 @@ Somewhat ranked, based on experience:
 * Backend engineering
 * Ruby, Ruby on Rails
 * (Web) frontend engineering
+* DevOps, CI/CD
 * Generative AI engineering
 * E-commerce domain
 * Accounting domain
@@ -64,6 +65,7 @@ Working across 3 engineering teams focused on the Building Blocks (reusable soft
   * new-Block generation solution for the Block assembly process.
   * Blocks Package manager for Ruby and React components.
   * Blocks Maintainance tooling platform using Generative AI.
+  * Blocks dependency graph
 
 `Apr 2022 - Apr 2023`
 __Software Solutions Architect__ (permanent), notonthehighstreet.com, London
