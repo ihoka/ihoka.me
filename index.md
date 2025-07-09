@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: Istvan Hoka - CV - Principal Engineer, Startup CTO - Jul 2025
+title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 ---
 
 # Istvan Hoka
