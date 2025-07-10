@@ -5,6 +5,9 @@
 - [x] Fix any HTML validation errors found
 - [x] Check CSS for any lint issues
 
+## Completed ✅
+- [x] Create MDX index file
+
 ## Pending 🔄
 - [ ] Transition to Tailwind CSS
 - [ ] Unit tests
