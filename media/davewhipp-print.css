@@ -156,11 +156,11 @@ h3 {
 
 a {
 	color: inherit;
-	text-decoration:none
+	text-decoration:none;
 }
 
 a:hover {
-	color:#39f
+	color:#39f;
 }
 
 #webaddress {

@@ -47,7 +47,7 @@ Passionate about elegant solutions that solve real problems without over-enginee
 ## Work experience
 
 `May 2023 - May 2025`
-**Builder.ai**, Principal Engineer (IC6)
+**Builder.ai**, Principal Engineer (IC5)
 
 Led technical transformation across 4 engineering teams focused on Application Assembly and Building Blocks platform serving hundreds of SME customers.
 
