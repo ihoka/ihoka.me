@@ -4,13 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}CV</title>
-  <link href="media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div id="main">
-    <div id="content">
-    {{ content }}
+<body class="bg-gray-50 text-gray-900">
+  <div class="max-w-4xl mx-auto px-6 py-8">
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      {{ content }}
     </div>
   </div>
 </body>
