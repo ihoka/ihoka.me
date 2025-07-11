@@ -13,7 +13,7 @@
 ## Pending 🔄
 
 - [ ] Transition to Tailwind CSS
-- [ ] Unit tests
+- [ ] Unit tests (validate links are not broken)
 - [ ] CI/CD pipeline (Gitlab)
 
 ---
