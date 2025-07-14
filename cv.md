@@ -3,8 +3,8 @@ layout: cv
 title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 ---
 
-# Istvan Hoka
-{: .text-4xl .font-bold .text-gray-800 .mb-4}
+# `Istvan Hoka`
+{: .text-6xl .font-mono .text-gray-800 .mb-8 .text-center .flex .items-center .justify-center .min-h-[200px]}
 
 <div class="text-center text-gray-600 mb-8 space-x-4">
     <a href="mailto:istvan.hoka@gmail.com" class="text-blue-600 hover:text-blue-800">istvan.hoka@gmail.com</a>
