@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: index
 title: Istvan Hoka
 ---
 
