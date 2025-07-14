@@ -9,10 +9,13 @@
 ## Completed ✅
 
 - [x] Create MD index file
+- [x] Transition to Tailwind CSS
+
+## In Progress 🔄
+
+- [ ] Style the index page
 
 ## Pending 🔄
-
-- [ ] Transition to Tailwind CSS
 - [ ] Unit tests (validate links are not broken)
 - [ ] CI/CD pipeline (Gitlab)
 
