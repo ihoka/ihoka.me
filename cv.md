@@ -6,13 +6,7 @@ title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 # `Istvan Hoka`
 {: .text-6xl .font-mono .text-gray-100 .mb-8 .text-center}
 
-<div class="text-center text-gray-300 mb-8 space-x-4">
-    <a href="mailto:istvan.hoka@gmail.com" class="text-blue-400 hover:text-blue-300">istvan.hoka@gmail.com</a>
-    <span class="text-gray-500">|</span>
-    <a href="https://linkedin.com/in/ihoka" class="text-blue-400 hover:text-blue-300">linkedin.com/in/ihoka</a>
-    <span class="text-gray-500">|</span>
-    <a href="tel:+447424665097" class="text-blue-400 hover:text-blue-300">+44 (0)7424 665097</a>
-    <span class="text-gray-500">|</span>
+<div class="text-center text-gray-300 mb-8">
     <span>London, UK</span>
 </div>
 
