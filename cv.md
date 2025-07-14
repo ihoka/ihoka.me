@@ -4,20 +4,20 @@ title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 ---
 
 # `Istvan Hoka`
-{: .text-6xl .font-mono .text-gray-800 .mb-8 .text-center .flex .items-center .justify-center .min-h-[200px]}
+{: .text-6xl .font-mono .text-gray-100 .mb-8 .text-center}
 
-<div class="text-center text-gray-600 mb-8 space-x-4">
-    <a href="mailto:istvan.hoka@gmail.com" class="text-blue-600 hover:text-blue-800">istvan.hoka@gmail.com</a>
-    <span class="text-gray-400">|</span>
-    <a href="https://linkedin.com/in/ihoka" class="text-blue-600 hover:text-blue-800">linkedin.com/in/ihoka</a>
-    <span class="text-gray-400">|</span>
-    <a href="tel:+447424665097" class="text-blue-600 hover:text-blue-800">+44 (0)7424 665097</a>
-    <span class="text-gray-400">|</span>
+<div class="text-center text-gray-300 mb-8 space-x-4">
+    <a href="mailto:istvan.hoka@gmail.com" class="text-blue-400 hover:text-blue-300">istvan.hoka@gmail.com</a>
+    <span class="text-gray-500">|</span>
+    <a href="https://linkedin.com/in/ihoka" class="text-blue-400 hover:text-blue-300">linkedin.com/in/ihoka</a>
+    <span class="text-gray-500">|</span>
+    <a href="tel:+447424665097" class="text-blue-400 hover:text-blue-300">+44 (0)7424 665097</a>
+    <span class="text-gray-500">|</span>
     <span>London, UK</span>
 </div>
 
 ## Professional Summary
-{: .text-2xl .font-semibold .text-gray-700 .mb-4 .border-b-2 .border-blue-500 .pb-2}
+{: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 <div class="mb-6">
 <p class="text-lg leading-relaxed mb-4"><strong>Staff Engineer & Startup CTO</strong> with 20+ years building scalable systems and leading technical transformation. Architected platforms serving 50M+ monthly users, designed frameworks managing 500+ software components, and established engineering practices that improved developer productivity across multiple organizations. Expert in "building the machine that builds the machine" - creating systems, processes, and teams that deliver exceptional products while avoiding over-engineering.</p>
@@ -35,7 +35,7 @@ title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 </div>
 
 ## Technical Leadership Philosophy
-{: .text-2xl .font-semibold .text-gray-700 .mb-4 .border-b-2 .border-blue-500 .pb-2}
+{: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 Passionate about elegant solutions that solve real problems without over-engineering. Focus on:
 
@@ -45,7 +45,7 @@ Passionate about elegant solutions that solve real problems without over-enginee
 * **Problem-First Thinking**: Technology choices driven by business needs, not technology trends
 
 ## Key Achievements
-{: .text-2xl .font-semibold .text-gray-700 .mb-4 .border-b-2 .border-blue-500 .pb-2}
+{: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 * **System Architecture at Scale**: Designed dependency management systems and CI/CD pipelines serving 500+ Ruby/Rails & React components, reducing build times by 90% and enabling hundreds of deployments per day (as opposed to one every several weeks).
 * **GenAI Innovation**: Spearheaded adoption of GenAI/Copilot tools across engineering teams, building BlockSmith framework for automated maintenance that reduced manual work by 90%
@@ -54,7 +54,7 @@ Passionate about elegant solutions that solve real problems without over-enginee
 * **Business-Critical Problem Solving**: Identified and fixed compound precision errors in tax systems, reducing company tax liability by £500k annually.
 
 ## Work experience
-{: .text-2xl .font-semibold .text-gray-700 .mb-4 .border-b-2 .border-blue-500 .pb-2}
+{: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 `May 2023 - May 2025`
 **Builder.ai**, Principal Engineer (IC5)
@@ -161,7 +161,7 @@ First contact with the new owner of Blinksale, hired as lead developer.
 Co-founded Aissac SRL in Cluj-Napoca, Romania, a small development shop focused on web development, using Ruby on Rails as the primary development framework. Overtime I became the sole owner of the business.
 
 ## Education
-{: .text-2xl .font-semibold .text-gray-700 .mb-4 .border-b-2 .border-blue-500 .pb-2}
+{: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 `2000 - 2005`
 **BSE Automation and Computer Science**, Technical University of Cluj-Napoca, Romania
