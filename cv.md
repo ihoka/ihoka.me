@@ -1,15 +1,15 @@
 ---
 layout: cv
-title: Istvan Hoka | CV | Software Engineer, Startup CTO - Jul 2025
+title: Istvan Hoka | CV
 ---
 
-# Istvan Hoka
+# [Istvan Hoka](/)
 
 London, UK
 
 ## Professional Summary
 
-**Staff Engineer & Startup CTO** with 20+ years building scalable systems and leading technical transformation. Architected platforms serving 50M+ monthly users, designed frameworks managing 500+ software components, and established engineering practices that improved developer productivity across multiple organizations. Expert in "building the machine that builds the machine" - creating systems, processes, and teams that deliver exceptional products while avoiding over-engineering.
+**Software Engineer & Startup CTO** with 20+ years building scalable systems and leading technical transformation. Architected platforms serving 50M+ monthly users, designed frameworks managing 500+ software components, and established engineering practices that improved developer productivity across multiple organizations. Expert in "building the machine that builds the machine" - creating systems, processes, and teams that deliver exceptional products while avoiding over-engineering.
 
 ### Core Expertise
 

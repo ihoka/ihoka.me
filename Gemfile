@@ -6,4 +6,6 @@ gem "jekyll"
 
 gem "webrick", "~> 1.7"
 
-gem "tailwindcss-ruby", "~> 4.1"
+group :jekyll_plugins do
+  gem "jekyll-tailwindcss"
+end

@@ -7,7 +7,9 @@
       "Bash(git commit:*)",
       "Bash(git checkout:*)",
       "Bash(git push:*)",
-      "Bash(mise install:*)"
+      "Bash(mise install:*)",
+      "Bash(bundle install:*)",
+      "Bash(bundle exec tailwindcss:*)"
     ],
     "deny": []
   }
