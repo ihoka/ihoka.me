@@ -16,6 +16,7 @@
 - [ ] Style the index page
 
 ## Pending 🔄
+
 - [ ] Unit tests (validate links are not broken)
 - [ ] CI/CD pipeline (Gitlab)
 

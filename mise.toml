@@ -1,7 +1,16 @@
 [tools]
 claude = "latest"
 gh = "latest"
+node = "latest"
 
 [tasks.dev]
 description = "Start Jekyll development server with live reload"
 run = "bundle exec jekyll serve --livereload --incremental --open-url"
+
+[tasks.lint]
+description = "Run markdown linter on all markdown files"
+run = "markdownlint *.md"
+
+[tasks.lint-fix]
+description = "Run markdown linter and fix auto-fixable issues"
+run = "markdownlint --fix *.md"

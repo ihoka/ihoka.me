@@ -4,6 +4,7 @@ title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 ---
 
 # `Istvan Hoka`
+
 {: .text-6xl .font-mono .text-gray-100 .mb-8 .text-center}
 
 <div class="text-center text-gray-300 mb-8">
@@ -11,6 +12,7 @@ title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 </div>
 
 ## Professional Summary
+
 {: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 <div class="mb-6">
@@ -29,6 +31,7 @@ title: Istvan Hoka - CV - Staff Engineer, Startup CTO - Jul 2025
 </div>
 
 ## Technical Leadership Philosophy
+
 {: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 Passionate about elegant solutions that solve real problems without over-engineering. Focus on:
@@ -39,6 +42,7 @@ Passionate about elegant solutions that solve real problems without over-enginee
 * **Problem-First Thinking**: Technology choices driven by business needs, not technology trends
 
 ## Key Achievements
+
 {: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 * **System Architecture at Scale**: Designed dependency management systems and CI/CD pipelines serving 500+ Ruby/Rails & React components, reducing build times by 90% and enabling hundreds of deployments per day (as opposed to one every several weeks).
@@ -48,6 +52,7 @@ Passionate about elegant solutions that solve real problems without over-enginee
 * **Business-Critical Problem Solving**: Identified and fixed compound precision errors in tax systems, reducing company tax liability by £500k annually.
 
 ## Work experience
+
 {: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 `May 2023 - May 2025`
@@ -155,6 +160,7 @@ First contact with the new owner of Blinksale, hired as lead developer.
 Co-founded Aissac SRL in Cluj-Napoca, Romania, a small development shop focused on web development, using Ruby on Rails as the primary development framework. Overtime I became the sole owner of the business.
 
 ## Education
+
 {: .text-2xl .font-semibold .text-gray-200 .mb-4 .border-b-2 .border-blue-400 .pb-2}
 
 `2000 - 2005`

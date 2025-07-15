@@ -4,3 +4,4 @@ _site/
 *.pdf
 .DS_Store
 .claude/settings.local.json
+.jekyll-metadata
