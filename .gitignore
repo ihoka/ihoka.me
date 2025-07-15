@@ -5,3 +5,4 @@ _site/
 .DS_Store
 .claude/settings.local.json
 .jekyll-metadata
+node_modules/
