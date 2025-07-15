@@ -55,7 +55,7 @@ The site uses a dark theme with:
 
 ### Author
 
-- Istvan Hoka ([http://www.ihoka.me](ihoka.me))
+- Istvan Hoka ([ihoka.me](http://www.ihoka.me))
 - Eliseo Papa ([Twitter](http://twitter.com/elipapa)/[Github](http://github.com/elipapa)/[Website](https://elipapa.github.io)).
 
 ### License
