@@ -9,6 +9,7 @@ This is a Jekyll-based static site serving as a personal CV/resume website. The 
 ## Development Commands
 
 - `mise run dev` - Start Jekyll development server with live reload, incremental builds, and auto-open browser
+- **Note**: The dev server runs continuously in the background as a VSCode task - no need to start it manually
 
 ## Build Process
 
