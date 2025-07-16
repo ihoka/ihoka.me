@@ -8,4 +8,11 @@
 
 h1 {
     font-size: 2em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #aaabae;
+}
+
+.bg-blue-900 {
+    background-color: #030712;
 }
