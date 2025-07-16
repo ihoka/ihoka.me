@@ -1,9 +1,13 @@
 [tools]
 claude = "latest"
 gh = "latest"
-node = "latest"
+lazygit = "latest"
 
 
 [tasks."dev"]
 description = "Start Jekyll development server with live reload"
 run = "bundle exec jekyll serve --livereload --open-url"
+
+[tasks."lazygit"]
+description = "Start lazygit"
+run = "lazygit"
