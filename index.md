@@ -4,5 +4,3 @@ title: Istvan Hoka
 ---
 
 # Istvan Hoka
-
-[CV](cv)
