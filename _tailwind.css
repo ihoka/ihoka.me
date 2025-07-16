@@ -6,7 +6,7 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 
-h1 {
+#home-page h1 {
     font-size: 2em;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -19,7 +19,7 @@ h1 {
     position: relative;
 }
 
-h1::before {
+#home-page h1::before {
     content: '';
     position: absolute;
     top: -2px;
@@ -36,7 +36,7 @@ h1::before {
     background-color: #030712;
 }
 
-.social-links {
+#home-page .social-links {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
@@ -49,7 +49,7 @@ h1::before {
     position: relative;
 }
 
-.social-links::before {
+#home-page .social-links::before {
     content: '';
     position: absolute;
     top: 0;
@@ -61,7 +61,7 @@ h1::before {
     pointer-events: none;
 }
 
-.social-icon {
+#home-page .social-icon {
     color: #d1d5db;
     font-size: 1rem;
     padding: 0.5rem;
@@ -72,15 +72,15 @@ h1::before {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.social-icon:hover {
+#home-page .social-icon:hover {
     color: #ffffff;
     background: rgba(255, 255, 255, 0.15);
     transform: scale(1.1);
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
-/* Gradient styling for bullet points under name */
-ul li:nth-child(1) {
+/* Gradient styling for bullet points under name on home page */
+#home-page ul li:nth-child(1) {
     font-weight: bold;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.4));
     background-clip: text;
@@ -88,7 +88,7 @@ ul li:nth-child(1) {
     color: transparent;
 }
 
-ul li:nth-child(2) {
+#home-page ul li:nth-child(2) {
     font-weight: bold;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
     background-clip: text;
@@ -96,7 +96,7 @@ ul li:nth-child(2) {
     color: transparent;
 }
 
-ul li:nth-child(3) {
+#home-page ul li:nth-child(3) {
     font-weight: bold;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
     background-clip: text;
@@ -104,7 +104,7 @@ ul li:nth-child(3) {
     color: transparent;
 }
 
-ul li:nth-child(4) {
+#home-page ul li:nth-child(4) {
     font-weight: bold;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
     background-clip: text;
