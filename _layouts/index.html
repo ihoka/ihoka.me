@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/styling.css' | relative_url }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
-  <body class="min-h-screen flex items-center justify-center">
-    <div class="text-center">
+  <body class="min-h-screen flex flex-col items-center justify-center bg-blue-900">
+    <div class="text-center flex-1 flex items-center">
       <div>{{ content }}</div>
     </div>
+    <div class="pb-12">
+      <div class="social-links">
+        <a href="https://github.com/ihoka" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ihoka/" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/ihoka" class="social-icon" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="cv" class="social-icon" title="CV"><i class="fas fa-file-alt"></i></a>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('mousemove', function(e) {
+        const h1 = document.querySelector('h1');
+        const centerX = window.innerWidth / 2;
+        const mouseX = e.clientX;
+        const rotation = ((mouseX - centerX) / centerX) * 15; // Max 15 degrees rotation
+        h1.style.transform = `rotateY(${rotation}deg)`;
+      });
+    </script>
   </body>
 </html>
