@@ -3,4 +3,9 @@
  * It is @imported into the assets/css/styles.css file, and its output is included in the build.
  */
 
-@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+h1 {
+    font-size: 2em;
+}

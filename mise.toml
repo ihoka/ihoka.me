@@ -6,4 +6,4 @@ node = "latest"
 
 [tasks."dev"]
 description = "Start Jekyll development server with live reload"
-run = "bundle exec jekyll serve --livereload --incremental --open-url"
+run = "bundle exec jekyll serve --livereload --open-url"
