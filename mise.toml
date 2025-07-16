@@ -3,10 +3,14 @@ claude = "latest"
 gh = "latest"
 lazygit = "latest"
 
+[tasks."install"]
+description = "Install missing dependencies"
+run = "bundle check || bundle install"
 
 [tasks."dev"]
 description = "Start Jekyll development server with live reload"
 run = "bundle exec jekyll serve --livereload --open-url"
+depends = ["install"]
 
 [tasks."lazygit"]
 description = "Start lazygit"

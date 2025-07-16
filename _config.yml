@@ -1,12 +1,25 @@
 destination: _site
 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-tailwindcss
+
 tailwindcss:
   css_path: "./_tailwind.css" # this is the default location
 
 # jekyll-seo-tag configuration
+title: Istvan Hoka
+description: Software Engineer & Startup CTO with 20+ years building scalable systems and leading technical transformation.
 author: Istvan Hoka
 url: http://www.ihoka.com
 google_analytics: G-77ZXM9KF74
+
+social:
+  name: Istvan Hoka
+  links:
+    - https://github.com/ihoka
+    - https://www.linkedin.com/in/ihoka/
+    - https://x.com/ihoka
 
 markdown: kramdown
 kramdown:
