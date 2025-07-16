@@ -6,6 +6,7 @@ tailwindcss:
 # jekyll-seo-tag configuration
 author: Istvan Hoka
 url: http://www.ihoka.com
+google_analytics: G-77ZXM9KF74
 social:
   name: Istvan Hoka
   links:
