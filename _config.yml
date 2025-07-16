@@ -7,10 +7,6 @@ tailwindcss:
 author: Istvan Hoka
 url: http://www.ihoka.com
 google_analytics: G-77ZXM9KF74
-social:
-  name: Istvan Hoka
-  links:
-    - https://www.linkedin.com/in/ihoka/
 
 markdown: kramdown
 kramdown:
