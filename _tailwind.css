@@ -111,3 +111,79 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+/* CV page markdown code styling */
+#cv-page h1 {
+    color: #60a5fa; /* blue-400 */
+    border-bottom: 1px solid #374151; /* gray-700 */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#cv-page h2 {
+    color: #34d399; /* emerald-400 */
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#cv-page h3 {
+    color: #fbbf24; /* amber-400 */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#cv-page h4 {
+    color: #f472b6; /* pink-400 */
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+#cv-page strong {
+    color: #fbbf24; /* amber-400 */
+    font-weight: 600;
+}
+
+#cv-page em {
+    color: #a78bfa; /* violet-400 */
+    font-style: italic;
+}
+
+#cv-page a {
+    color: #60a5fa; /* blue-400 */
+    text-decoration: underline;
+}
+
+#cv-page a:hover {
+    color: #93c5fd; /* blue-300 */
+}
+
+#cv-page ul {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cv-page ul li {
+    margin-bottom: 0.25rem;
+}
+
+#cv-page ul li::before {
+    content: "•";
+    color: #6b7280; /* gray-500 */
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+#cv-page p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+#cv-page code {
+    background-color: #1f2937; /* gray-800 */
+    color: #fbbf24; /* amber-400 */
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', Courier, monospace;
+}
