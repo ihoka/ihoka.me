@@ -114,7 +114,7 @@
 
 /* CV page plain markdown text styling */
 #cv-page h1,
-#cv-page h2, 
+#cv-page h2,
 #cv-page h3,
 #cv-page h4,
 #cv-page strong,
@@ -223,4 +223,116 @@
     margin-right: 0.5rem;
     color: #fcd34d; /* amber-300 - highlight bullet */
     font-weight: bold;
+}
+
+@media print {
+    #cv-page {
+        color: #000 !important;
+        background: white !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    #cv-page .bg-white {
+        background: white !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0.5in !important;
+        width: 100% !important;
+        min-height: auto !important;
+    }
+    
+    #cv-page h1,
+    #cv-page h2, 
+    #cv-page h3,
+    #cv-page h4,
+    #cv-page strong,
+    #cv-page em,
+    #cv-page a,
+    #cv-page code,
+    #cv-page p,
+    #cv-page li {
+        color: #000 !important;
+        font-size: 9pt !important;
+        line-height: 1.1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    #cv-page h1 {
+        font-size: 14pt !important;
+        margin-bottom: 6pt !important;
+        page-break-after: avoid;
+    }
+    
+    #cv-page h2 {
+        font-size: 12pt !important;
+        margin-top: 10pt !important;
+        margin-bottom: 4pt !important;
+        page-break-after: avoid;
+    }
+    
+    #cv-page h3 {
+        font-size: 10pt !important;
+        margin-top: 6pt !important;
+        margin-bottom: 3pt !important;
+        page-break-after: avoid;
+    }
+    
+    #cv-page h4 {
+        font-size: 9pt !important;
+        margin-top: 4pt !important;
+        margin-bottom: 2pt !important;
+        page-break-after: avoid;
+    }
+    
+    #cv-page p {
+        margin-bottom: 4pt !important;
+        orphans: 2;
+        widows: 2;
+    }
+    
+    #cv-page ul {
+        margin: 3pt 0 !important;
+        padding-left: 12pt !important;
+    }
+    
+    #cv-page ul li {
+        margin: 1pt 0 !important;
+        text-indent: -12pt !important;
+        padding-left: 12pt !important;
+        page-break-inside: avoid;
+    }
+    
+    #cv-page code {
+        background-color: #e5e5e5 !important;
+        color: #b45309 !important;
+        padding: 1pt 2pt !important;
+        font-size: 8pt !important;
+        border-radius: 2pt !important;
+        font-weight: bold !important;
+    }
+    
+    /* Remove decorative content for print */
+    #cv-page h1::before,
+    #cv-page h2::before,
+    #cv-page h3::before,
+    #cv-page h4::before,
+    #cv-page a::before,
+    #cv-page a::after,
+    #cv-page code::before,
+    #cv-page code::after {
+        content: none !important;
+    }
+    
+    #cv-page ul li::before {
+        content: "• " !important;
+        color: #000 !important;
+        margin-right: 4pt !important;
+    }
+    
+    /* Force page break after Professional Summary to optimize layout */
+    #cv-page h2:nth-of-type(2) {
+        page-break-before: always;
+    }
 }
