@@ -112,78 +112,115 @@
     color: transparent;
 }
 
-/* CV page markdown code styling */
+/* CV page plain markdown text styling */
+#cv-page h1,
+#cv-page h2, 
+#cv-page h3,
+#cv-page h4,
+#cv-page strong,
+#cv-page em,
+#cv-page a,
+#cv-page code,
+#cv-page p,
+#cv-page li {
+    color: #d1d5db; /* gray-300 - uniform text color */
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #cv-page h1 {
-    color: #60a5fa; /* blue-400 */
-    border-bottom: 1px solid #374151; /* gray-700 */
-    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
+#cv-page h1::before {
+    content: "# ";
+}
+
 #cv-page h2 {
-    color: #34d399; /* emerald-400 */
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
 }
 
+#cv-page h2::before {
+    content: "## ";
+}
+
 #cv-page h3 {
-    color: #fbbf24; /* amber-400 */
+    font-size: 1.25rem;
+    font-weight: bold;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
+#cv-page h3::before {
+    content: "### ";
+}
+
 #cv-page h4 {
-    color: #f472b6; /* pink-400 */
+    font-size: 1.1rem;
+    font-weight: bold;
     margin-top: 0.75rem;
     margin-bottom: 0.5rem;
 }
 
+#cv-page h4::before {
+    content: "#### ";
+}
+
 #cv-page strong {
-    color: #fbbf24; /* amber-400 */
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #cv-page em {
-    color: #a78bfa; /* violet-400 */
     font-style: italic;
 }
 
-#cv-page a {
-    color: #60a5fa; /* blue-400 */
-    text-decoration: underline;
+#cv-page a::before {
+    content: "[";
 }
 
-#cv-page a:hover {
-    color: #93c5fd; /* blue-300 */
-}
-
-#cv-page ul {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-#cv-page ul li {
-    margin-bottom: 0.25rem;
-}
-
-#cv-page ul li::before {
-    content: "•";
-    color: #6b7280; /* gray-500 */
-    font-weight: bold;
-    display: inline-block;
-    width: 1rem;
-    margin-left: -1rem;
-}
-
-#cv-page p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
+#cv-page a::after {
+    content: "](" attr(href) ")";
 }
 
 #cv-page code {
-    background-color: #1f2937; /* gray-800 */
-    color: #fbbf24; /* amber-400 */
+    background-color: #374151; /* gray-700 - darker background */
+    color: #fcd34d; /* amber-300 - bright yellow for code */
     padding: 0.125rem 0.25rem;
     border-radius: 0.25rem;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+#cv-page code::before {
+    content: "`";
+}
+
+#cv-page code::after {
+    content: "`";
+}
+
+#cv-page ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+#cv-page ul li {
+    margin: 0.25rem 0;
+    text-indent: -2rem;
+    padding-left: 2rem;
+}
+
+#cv-page ul li::before {
+    content: "* ";
+    margin-right: 0.5rem;
+    color: #fcd34d; /* amber-300 - highlight bullet */
+    font-weight: bold;
 }
