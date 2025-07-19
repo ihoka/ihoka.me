@@ -79,9 +79,31 @@
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
-/* Gradient styling for bullet points under name on home page */
-#home-page ul li:nth-child(1) {
+/* Home page bullet styling - same as CV but with gradients */
+#home-page ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+#home-page ul li {
+    margin: 0.25rem 0;
+    text-indent: -2rem;
+    padding-left: 2rem;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+#home-page ul li::before {
+    content: "* ";
+    margin-right: 0.5rem;
+    color: #fcd34d; /* amber-300 - same as CV */
+    font-weight: bold;
+}
+
+/* Gradient styling for bullet text content on home page */
+#home-page ul li:nth-child(1) {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.4));
     background-clip: text;
     -webkit-background-clip: text;
@@ -89,7 +111,6 @@
 }
 
 #home-page ul li:nth-child(2) {
-    font-weight: bold;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
     background-clip: text;
     -webkit-background-clip: text;
@@ -97,7 +118,6 @@
 }
 
 #home-page ul li:nth-child(3) {
-    font-weight: bold;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
     background-clip: text;
     -webkit-background-clip: text;
@@ -105,7 +125,6 @@
 }
 
 #home-page ul li:nth-child(4) {
-    font-weight: bold;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
     background-clip: text;
     -webkit-background-clip: text;
