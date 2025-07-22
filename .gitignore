@@ -6,3 +6,7 @@ _site/
 .claude/settings.local.json
 .jekyll-metadata
 node_modules/
+.makemd
+.obsidian
+.space
+
