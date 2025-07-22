@@ -51,7 +51,7 @@ Led technical transformation across 4 engineering teams focused on Application A
 
 #### Developer Productivity & Innovation
 
-- **Blocksmith**: Built GenAI framework for batch maintenance of Blocks, reducing manual work by 90%: automatic documentation generation, application of error handling and unit testing standards, stack upgrades. Learned `Python` from scratch in the process, using GenAI dev tools (`Github Copilot`, `Cline / Memory Bank`).
+- **Blocksmith**: Built GenAI framework for batch maintenance of Blocks, reducing manual work by 90%: automatic documentation generation, application of error handling and unit testing standards, stack upgrades. Learned `Python` from scratch in the process, using GenAI dev tools (`RAG`, `MCP`, `Github Copilot`, `Cline / Memory Bank`).
 - **Blocks Workspace IDE**: Designed and implemented, enabling turn-key local full-stack development, cutting developer onboarding time from days to minutes. `Python`, `Node.js`, `[mise](http://mise.jdx.dev/)`, `uv`.
 - **BVM (Blocks Version Manager)** Implemented filling gaps in platform package managers, improving dependency resolution of Blocks. This allowed the rollout of SemVer for Blocks, taking into account their compatibility with the stack version as well (Ruby, Node.js, React, React Native).
 
