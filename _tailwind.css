@@ -79,6 +79,26 @@
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
+/* Scroll hint styling */
+#home-page .scroll-hint {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#home-page .scroll-hint:hover {
+    color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
 /* Home page bullet styling - same as CV but with gradients */
 #home-page ul {
     list-style: none;
