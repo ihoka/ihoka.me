@@ -3,6 +3,7 @@ destination: _site
 plugins:
   - jekyll-seo-tag
   - jekyll-tailwindcss
+  - jekyll-sitemap
 
 tailwindcss:
   css_path: "./_tailwind.css" # this is the default location

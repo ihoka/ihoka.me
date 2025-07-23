@@ -38,6 +38,8 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-tailwindcss (0.7.0)
       tailwindcss-ruby
     jekyll-watch (2.2.1)
@@ -78,6 +80,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-seo-tag
+  jekyll-sitemap
   jekyll-tailwindcss
   webrick (~> 1.7)
 
