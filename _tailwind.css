@@ -1,11 +1,12 @@
 /*
- * This file is used to define the tailwindcss theme and typography styles.
+ * This file is used to define the tailwindcss theme and component styles.
  * It is @imported into the assets/css/styles.css file, and its output is included in the build.
  */
 
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 
+/* Typography styles */
 #home-page h1 {
     font-size: 2em;
     font-weight: bold;
@@ -30,6 +31,343 @@
     z-index: -1;
     border-radius: 8px;
     filter: blur(2px);
+}
+
+#home-page ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+#home-page ul li {
+    margin: 0.25rem 0;
+    text-indent: -2rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+#home-page ul li::before {
+    content: "* ";
+    margin-right: 0.5rem;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#home-page ul li:nth-child(1) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.4));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#home-page ul li:nth-child(2) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#home-page ul li:nth-child(3) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#home-page ul li:nth-child(4) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#home-page ul li:nth-child(5) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#blog-page h1,
+#blog-page h2,
+#blog-page h3,
+#blog-page h4,
+#blog-page strong,
+#blog-page em,
+#blog-page a,
+#blog-page code,
+#blog-page p,
+#blog-page li {
+    color: #d1d5db;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#blog-page h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#blog-page h1::before {
+    content: "# ";
+}
+
+#blog-page h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#blog-page h2::before {
+    content: "## ";
+}
+
+#blog-page h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#blog-page h3::before {
+    content: "### ";
+}
+
+#blog-page h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+#blog-page h4::before {
+    content: "#### ";
+}
+
+#blog-page strong {
+    font-weight: bold;
+}
+
+#blog-page em {
+    font-style: italic;
+}
+
+#blog-page a::before {
+    content: "[";
+}
+
+#blog-page a::after {
+    content: "](" attr(href) ")";
+}
+
+#blog-page code {
+    background-color: #374151;
+    color: #ff0000;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#blog-page code::before {
+    content: "`";
+}
+
+#blog-page code::after {
+    content: "`";
+}
+
+#blog-page ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+#blog-page ul li {
+    margin: 0.25rem 0;
+    text-indent: -2rem;
+    padding-left: 2rem;
+}
+
+#blog-page ul li::before {
+    content: "* ";
+    margin-right: 0.5rem;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#blog-page .blog-site-title {
+    color: #d1d5db;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#blog-page .blog-nav-link {
+    color: #d1d5db;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+#blog-page .blog-nav-link:hover {
+    color: #ffffff;
+}
+
+#blog-page .blog-nav-separator {
+    color: #6b7280;
+    margin: 0 0.5rem;
+}
+
+#blog-page .blog-post-title {
+    color: #d1d5db;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#blog-page .blog-post-title::before {
+    content: "# ";
+    color: #ff0000;
+}
+
+#blog-page .blog-post-meta {
+    color: #9ca3af;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+}
+
+#blog-page .blog-post-tag {
+    color: #6b7280;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+#blog-page .post-tag {
+    color: #6b7280;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+#cv-page h1,
+#cv-page h2,
+#cv-page h3,
+#cv-page h4,
+#cv-page strong,
+#cv-page em,
+#cv-page a,
+#cv-page code,
+#cv-page p,
+#cv-page li {
+    color: #d1d5db;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#cv-page h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#cv-page h1::before {
+    content: "# ";
+}
+
+#cv-page h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#cv-page h2::before {
+    content: "## ";
+}
+
+#cv-page h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#cv-page h3::before {
+    content: "### ";
+}
+
+#cv-page h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+#cv-page h4::before {
+    content: "#### ";
+}
+
+#cv-page strong {
+    font-weight: bold;
+}
+
+#cv-page em {
+    font-style: italic;
+}
+
+#cv-page a::before {
+    content: "[";
+}
+
+#cv-page a::after {
+    content: "](" attr(href) ")";
+}
+
+#cv-page code {
+    background-color: #374151;
+    color: #ff0000;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#cv-page code::before {
+    content: "`";
+}
+
+#cv-page code::after {
+    content: "`";
+}
+
+#cv-page ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+#cv-page ul li {
+    margin: 0.25rem 0;
+    text-indent: -2rem;
+    padding-left: 2rem;
+}
+
+#cv-page ul li::before {
+    content: "* ";
+    margin-right: 0.5rem;
+    color: #ff0000;
+    font-weight: bold;
 }
 
 .bg-blue-900 {
@@ -99,176 +437,113 @@
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 
-/* Home page bullet styling - same as CV but with gradients */
-#home-page ul {
-    list-style: none;
-    padding-left: 2rem;
-    margin: 1rem 0;
+
+/* Blog page social links - same as home page */
+#blog-page .social-links {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
-#home-page ul li {
-    margin: 0.25rem 0;
-    text-indent: -2rem;
-    padding-left: 2rem;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
+#blog-page .social-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 1rem 1rem 0 0;
+    pointer-events: none;
 }
 
-#home-page ul li::before {
-    content: "* ";
-    margin-right: 0.5rem;
-    color: #ff0000;
-    font-weight: bold;
+#blog-page .social-icon {
+    color: #d1d5db;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Gradient styling for bullet text content on home page */
-#home-page ul li:nth-child(1) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.4));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+#home-page .social-icon:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
-#home-page ul li:nth-child(2) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+/* Scroll hint styling */
+#home-page .scroll-hint {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-#home-page ul li:nth-child(3) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+#home-page .scroll-hint:hover {
+    color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 
-#home-page ul li:nth-child(4) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+/* Blog page social links - same as home page */
+#blog-page .social-links {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
-#home-page ul li:nth-child(5) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+#blog-page .social-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 1rem 1rem 0 0;
+    pointer-events: none;
 }
 
-/* CV page plain markdown text styling */
-#cv-page h1,
-#cv-page h2,
-#cv-page h3,
-#cv-page h4,
-#cv-page strong,
-#cv-page em,
-#cv-page a,
-#cv-page code,
-#cv-page p,
-#cv-page li {
-    color: #d1d5db; /* gray-300 - uniform text color */
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+#blog-page .social-icon {
+    color: #d1d5db;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#cv-page h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-#cv-page h1::before {
-    content: "# ";
-}
-
-#cv-page h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-#cv-page h2::before {
-    content: "## ";
-}
-
-#cv-page h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-#cv-page h3::before {
-    content: "### ";
-}
-
-#cv-page h4 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-}
-
-#cv-page h4::before {
-    content: "#### ";
-}
-
-#cv-page strong {
-    font-weight: bold;
-}
-
-#cv-page em {
-    font-style: italic;
-}
-
-#cv-page a::before {
-    content: "[";
-}
-
-#cv-page a::after {
-    content: "](" attr(href) ")";
-}
-
-#cv-page code {
-    background-color: #374151; /* gray-700 - darker background */
-    color: #ff0000;
-    padding: 0.125rem 0.25rem;
-    border-radius: 0.25rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-#cv-page code::before {
-    content: "`";
-}
-
-#cv-page code::after {
-    content: "`";
-}
-
-#cv-page ul {
-    list-style: none;
-    padding-left: 2rem;
-    margin: 1rem 0;
-}
-
-#cv-page ul li {
-    margin: 0.25rem 0;
-    text-indent: -2rem;
-    padding-left: 2rem;
-}
-
-#cv-page ul li::before {
-    content: "* ";
-    margin-right: 0.5rem;
-    color: #ff0000; /* amber-300 - highlight bullet */
-    font-weight: bold;
+#blog-page .social-icon:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
 @media print {
@@ -359,7 +634,6 @@
         font-weight: bold !important;
     }
 
-    /* Remove decorative content for print */
     #cv-page h1::before,
     #cv-page h2::before,
     #cv-page h3::before,
@@ -377,7 +651,6 @@
         margin-right: 4pt !important;
     }
 
-    /* Force page break after Professional Summary to optimize layout */
     #cv-page h2:nth-of-type(2) {
         page-break-before: always;
     }
