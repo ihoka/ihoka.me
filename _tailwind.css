@@ -151,6 +151,227 @@
     color: transparent;
 }
 
+#home-page ul li:nth-child(5) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Blog page styling - same as CV page */
+#blog-page h1,
+#blog-page h2,
+#blog-page h3,
+#blog-page h4,
+#blog-page strong,
+#blog-page em,
+#blog-page a,
+#blog-page code,
+#blog-page p,
+#blog-page li {
+    color: #d1d5db; /* gray-300 - uniform text color */
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#blog-page h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#blog-page h1::before {
+    content: "# ";
+}
+
+#blog-page h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#blog-page h2::before {
+    content: "## ";
+}
+
+#blog-page h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#blog-page h3::before {
+    content: "### ";
+}
+
+#blog-page h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+#blog-page h4::before {
+    content: "#### ";
+}
+
+#blog-page strong {
+    font-weight: bold;
+}
+
+#blog-page em {
+    font-style: italic;
+}
+
+#blog-page a::before {
+    content: "[";
+}
+
+#blog-page a::after {
+    content: "](" attr(href) ")";
+}
+
+#blog-page code {
+    background-color: #374151; /* gray-700 - darker background */
+    color: #ff0000;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#blog-page code::before {
+    content: "`";
+}
+
+#blog-page code::after {
+    content: "`";
+}
+
+#blog-page ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+#blog-page ul li {
+    margin: 0.25rem 0;
+    text-indent: -2rem;
+    padding-left: 2rem;
+}
+
+#blog-page ul li::before {
+    content: "* ";
+    margin-right: 0.5rem;
+    color: #ff0000; /* red bullet */
+    font-weight: bold;
+}
+
+/* Blog-specific navigation and header styling */
+#blog-page .blog-site-title {
+    color: #d1d5db;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#blog-page .blog-nav-link {
+    color: #d1d5db;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+#blog-page .blog-nav-link:hover {
+    color: #ffffff;
+}
+
+#blog-page .blog-nav-separator {
+    color: #6b7280;
+    margin: 0 0.5rem;
+}
+
+#blog-page .blog-post-title {
+    color: #d1d5db;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#blog-page .blog-post-title::before {
+    content: "# ";
+    color: #ff0000;
+}
+
+#blog-page .blog-post-meta {
+    color: #9ca3af;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+}
+
+#blog-page .blog-post-tag {
+    color: #6b7280;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+#blog-page .post-tag {
+    color: #6b7280;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+/* Blog page social links - same as home page */
+#blog-page .social-links {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#blog-page .social-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 1rem 1rem 0 0;
+    pointer-events: none;
+}
+
+#blog-page .social-icon {
+    color: #d1d5db;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#blog-page .social-icon:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+}
+
 /* CV page plain markdown text styling */
 #cv-page h1,
 #cv-page h2,

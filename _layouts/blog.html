@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/styling.css' | relative_url }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
+    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
+    {% include google-analytics.html %}
+  </head>
+  <body id="blog-page" class="min-h-screen bg-blue-900">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+      <!-- Header with navigation -->
+      <header class="mb-12 text-center">
+        <nav class="mt-4">
+          <a href="/" class="blog-nav-link">Home</a>
+          <span class="blog-nav-separator">•</span>
+          <a href="/blog" class="blog-nav-link">Blog</a>
+          <span class="blog-nav-separator">•</span>
+          <a href="/cv" class="blog-nav-link">CV</a>
+        </nav>
+      </header>
+
+      <!-- Blog content -->
+      <main class="blog-content">
+        {{ content }}
+      </main>
+
+    </div>
+  </body>
+</html>
