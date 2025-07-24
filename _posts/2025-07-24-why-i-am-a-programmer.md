@@ -6,7 +6,7 @@ categories: blog
 tags: [programming, career, philosophy]
 ---
 
-# </>
+## </>
 
 I enjoy it.
 
@@ -23,3 +23,4 @@ Then he showed me the solution. A BASIC program, employing the Backtracking algo
 I was mesmerised. I did not understand anything, of course. Then, he ran it. And, over the course of a few minutes, the program ran on a Z80 processor, and printed out a solution every few seconds.
 
 That’s when I knew that I wanted to be a programmer.
+
