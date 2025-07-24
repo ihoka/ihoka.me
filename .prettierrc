@@ -1,5 +1,7 @@
 {
     "plugins": [
-        "prettier-plugin-tailwindcss"
-    ]
+        "prettier-plugin-tailwindcss",
+        "@shopify/prettier-plugin-liquid"
+    ],
+    "tailwindStylesheet": "./_tailwind.css"
 }

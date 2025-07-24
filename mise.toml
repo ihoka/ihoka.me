@@ -2,6 +2,7 @@
 claude = "latest"
 gh = "latest"
 lazygit = "latest"
+bun = "latest"
 
 [tasks."install"]
 description = "Install missing dependencies"
