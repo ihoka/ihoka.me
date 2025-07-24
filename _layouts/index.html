@@ -1,18 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/styling.css' | relative_url }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
-    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
-    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/styling.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="{{ '/favicon.svg' | relative_url }}"
+      type="image/svg+xml"
+    />
     {% include google-analytics.html %}
   </head>
-  <body id="home-page" class="min-h-screen flex flex-col items-center justify-center bg-blue-900">
-    <div class="text-center flex-1 flex items-center">
+  <body
+    id="home-page"
+    class="flex min-h-screen flex-col items-center justify-center bg-blue-900"
+  >
+    <div class="flex flex-1 items-center text-center">
       <div>
         {{ content }}
         <!-- Scroll hint -->
@@ -25,16 +46,32 @@
     </div>
     <div class="pb-12">
       <div class="social-links">
-        <a href="https://github.com/ihoka" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ihoka/" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://x.com/ihoka" class="social-icon" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.youtube.com/@ihoka" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="cv" class="social-icon" title="CV"><i class="fas fa-file-alt"></i></a>
+        <a href="https://github.com/ihoka" class="social-icon" title="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ihoka/"
+          class="social-icon"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://x.com/ihoka" class="social-icon" title="X (Twitter)"
+          ><i class="fab fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@ihoka"
+          class="social-icon"
+          title="YouTube"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="cv" class="social-icon" title="CV"
+          ><i class="fas fa-file-alt"></i
+        ></a>
       </div>
     </div>
     <script>
-      document.addEventListener('mousemove', function(e) {
-        const h1 = document.querySelector('h1');
+      document.addEventListener("mousemove", function (e) {
+        const h1 = document.querySelector("h1");
         const centerX = window.innerWidth / 2;
         const mouseX = e.clientX;
         const rotation = ((mouseX - centerX) / centerX) * 15; // Max 15 degrees rotation

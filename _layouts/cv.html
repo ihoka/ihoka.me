@@ -1,17 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/styling.css' | relative_url }}" />
-    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
-    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
-    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/styling.css' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="{{ '/favicon.svg' | relative_url }}"
+      type="image/svg+xml"
+    />
   </head>
-  <body id="cv-page" class="bg-blue-900 text-gray-100 min-h-screen flex justify-center items-start">
+  <body
+    id="cv-page"
+    class="flex min-h-screen items-start justify-center bg-blue-900 text-gray-100"
+  >
     <div class="my-12">
-      <div class="bg-white bg-opacity-5 p-12 font-mono text-sm leading-relaxed shadow-2xl" style="min-height: 11in; width: 8.5in;">
+      <div
+        class="bg-white bg-opacity-5 p-12 font-mono text-sm leading-relaxed shadow-2xl"
+        style="min-height: 11in; width: 8.5in"
+      >
         {{ content }}
       </div>
     </div>
