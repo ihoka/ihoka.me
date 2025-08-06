@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: Istvan Hoka | CV
+title: Istvan Hoka - CV - Resume
 ---
 
 # [Istvan Hoka](/)

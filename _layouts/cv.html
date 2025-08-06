@@ -23,6 +23,23 @@
       href="{{ '/favicon.svg' | relative_url }}"
       type="image/svg+xml"
     />
+    <script>
+      // Set dynamic title with current month and year
+      const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const now = new Date();
+      const month = months[now.getMonth()];
+      const day = now.getDate();
+      const year = now.getFullYear();
+      const dynamicTitle = `Istvan Hoka - CV - ${month} ${day}, ${year}`;
+      
+      // Update document title immediately
+      document.title = dynamicTitle;
+      
+      // Ensure title is set before print dialog
+      window.addEventListener('beforeprint', function() {
+        document.title = dynamicTitle;
+      });
+    </script>
   </head>
   <body
     id="cv-page"
