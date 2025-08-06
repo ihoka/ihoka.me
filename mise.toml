@@ -1,5 +1,5 @@
 [tools]
-claude = "latest"
+claude = "1.0.67"
 gh = "latest"
 lazygit = "latest"
 bun = "latest"
