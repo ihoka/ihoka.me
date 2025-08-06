@@ -370,6 +370,33 @@
     font-weight: bold;
 }
 
+/* Download PDF button styling */
+#cv-page .download-pdf-button {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ff0000;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+#cv-page .download-pdf-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.2);
+    color: #ff3333;
+}
+
+#cv-page .download-pdf-button:active {
+    transform: scale(0.95);
+}
+
 .bg-blue-900 {
     background-color: #030712;
 }
@@ -653,5 +680,10 @@
 
     #cv-page h2:nth-of-type(2) {
         page-break-before: always;
+    }
+
+    /* Hide the download button when printing */
+    .print\\:hidden {
+        display: none !important;
     }
 }
