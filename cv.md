@@ -38,6 +38,14 @@ Passionate about elegant solutions that solve real problems without over-enginee
 
 ## Work experience
 
+### **Co-Founder / CTO**, Kensan.ai `Present`
+
+Leading technical development and strategy for AI-powered solutions.
+
+### **Co-Founder / CTO**, FlySwiftTail.com `Present`
+
+Building innovative aviation technology solutions.
+
 ### **Builder.ai**, Principal (Staff) Engineer `May 2023 - May 2025`
 
 Led technical transformation across 4 engineering teams focused on Application Assembly and Building Blocks platform serving hundreds of SME customers.
