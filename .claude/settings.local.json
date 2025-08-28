@@ -11,7 +11,9 @@
       "Bash(bundle install:*)",
       "Bash(bundle exec tailwindcss:*)",
       "Bash(find:*)",
-      "Bash(mise tasks:*)"
+      "Bash(mise tasks:*)",
+      "Bash(grep:*)",
+      "Bash(curl:*)"
     ],
     "deny": []
   }
