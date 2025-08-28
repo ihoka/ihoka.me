@@ -65,16 +65,9 @@ body {
 }
 
 #home-page h1::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(135deg, var(--glass-border), transparent 50%);
-    z-index: -1;
-    border-radius: 8px;
-    filter: blur(2px);
+    content: '#';
+    color: var(--accent);
+    margin-right: 0.25rem;
 }
 
 #home-page ul {

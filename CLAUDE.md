@@ -54,8 +54,9 @@ The CSS file referenced in layouts is `/assets/css/styling.css` - ensure this pa
 
 ## Code Style Guidelines
 
-- **Markdown**: No HTML tags in markdown files when possible
-- **Styling**: All styling should go through Tailwind CSS system
+- **NO HTML IN MARKDOWN**: NEVER add ANY HTML tags to markdown files (.md files). Use pure markdown only
+- **CSS-ONLY STYLING**: All styling must be done through CSS only (_tailwind.css file). Use CSS selectors and pseudo-elements to style the generated HTML markup
+- **Styling**: All styling should go through Tailwind CSS system  
 - **CSS Processing**: Use the Jekyll + Tailwind CSS pipeline, don't write raw CSS
 - **Layouts**: Keep layouts minimal and focused on structure
 - **Content**: Separate content (markdown) from presentation (layouts)
