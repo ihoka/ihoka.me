@@ -1,6 +1,8 @@
 ---
 layout: cv
 title: Istvan Hoka - CV - Resume
+description: Experienced Software Engineer & Startup CTO with 20+ years in technical leadership, system architecture, and building scalable platforms
+image: /favicon.svg
 ---
 
 # [Istvan Hoka](/)

@@ -11,9 +11,22 @@ tailwindcss:
 # jekyll-seo-tag configuration
 title: Istvan Hoka
 description: Software Engineer & Startup CTO with 20+ years building scalable systems and leading technical transformation.
-author: Istvan Hoka
+tagline: Software Engineer & Startup CTO
+author: 
+  name: Istvan Hoka
+  email: hello@ihoka.me
+  url: https://ihoka.me
+  twitter: ihoka
 url: https://ihoka.me
+baseurl: ""
 google_analytics: G-77ZXM9KF74
+lang: en_US
+
+# Social and SEO
+logo: /favicon.svg
+twitter:
+  username: ihoka
+  card: summary_large_image
 
 social:
   name: Istvan Hoka
@@ -22,6 +35,10 @@ social:
     - https://www.linkedin.com/in/ihoka/
     - https://x.com/ihoka
     - https://www.youtube.com/@ihoka
+
+# Additional SEO metadata
+image: /favicon.svg
+keywords: "Software Engineer, CTO, Startup, AI Engineering, Full Stack Development, Technical Leadership, Ruby on Rails, Node.js, React, Python, System Architecture"
 
 markdown: kramdown
 kramdown:

@@ -1,0 +1,82 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name | default: site.title }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "email": "{{ site.author.email }}",
+  "jobTitle": "{{ site.tagline | default: 'Software Engineer & Startup CTO' }}",
+  "description": "{{ site.description }}",
+  "image": "{{ site.url }}{{ site.baseurl }}{{ site.logo | default: site.image }}",
+  "sameAs": {{ site.social.links | jsonify }},
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Technical University of Cluj-Napoca"
+  },
+  "knowsAbout": [
+    "Software Engineering",
+    "Technical Leadership",
+    "System Architecture",
+    "AI Engineering",
+    "Full Stack Development",
+    "Ruby on Rails",
+    "Node.js",
+    "React",
+    "Python"
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Chief Technology Officer",
+    "description": "Software Engineer & Startup CTO with 20+ years building scalable systems"
+  }
+}
+</script>
+
+{% if page.layout == "cv" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Istvan Hoka",
+    "jobTitle": "Software Engineer & Startup CTO",
+    "hasOccupation": [
+      {
+        "@type": "Role",
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Co-Founder / CTO"
+        },
+        "startDate": "2023",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Kensan.ai"
+        }
+      },
+      {
+        "@type": "Role",
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Principal Engineer"
+        },
+        "startDate": "2023-05",
+        "endDate": "2025-05",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Builder.ai"
+        }
+      }
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Technical University of Cluj-Napoca",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Romania"
+      }
+    }
+  }
+}
+</script>
+{% endif %}
