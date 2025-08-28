@@ -262,14 +262,15 @@ body {
 
 #blog-page ul {
     list-style: none;
-    padding-left: 2rem;
+    padding-left: 0;
     margin: 1rem 0;
 }
 
 #blog-page ul li {
     margin: 0.25rem 0;
-    text-indent: -2rem;
-    padding-left: 2rem;
+    padding-left: 0;
+    display: flex;
+    align-items: baseline;
 }
 
 #blog-page ul li::before {
@@ -277,6 +278,7 @@ body {
     margin-right: 0.5rem;
     color: var(--accent);
     font-weight: bold;
+    flex-shrink: 0;
 }
 
 #blog-page .blog-site-title {
