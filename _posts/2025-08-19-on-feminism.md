@@ -8,7 +8,7 @@ tags: [feminism, philosophy, society]
 
 This is from an email that a sent to a dear colleague of mine at Builder.ai.
 
---
+---
 
 I have not really thought seriously about feminism until meeting you. I just dismissed it as a political movement having to do with women's rights.
 

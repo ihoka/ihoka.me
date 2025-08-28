@@ -16,7 +16,7 @@
     --accent: #dc2626;
     --border: rgba(0, 0, 0, 0.1);
     --shadow: rgba(0, 0, 0, 0.1);
-    
+
     /* Component-specific colors */
     --code-bg: #e5e7eb;
     --code-text: #dc2626;
@@ -35,7 +35,7 @@
         --accent: #ff0000;
         --border: rgba(255, 255, 255, 0.2);
         --shadow: rgba(0, 0, 0, 0.3);
-        
+
         /* Component-specific colors */
         --code-bg: #374151;
         --code-text: #ff0000;
@@ -125,7 +125,7 @@ body {
         color: transparent;
         opacity: 1;
     }
-    
+
     #home-page ul li:nth-child(2) {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
         background-clip: text;
@@ -133,7 +133,7 @@ body {
         color: transparent;
         opacity: 1;
     }
-    
+
     #home-page ul li:nth-child(3) {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
         background-clip: text;
@@ -141,7 +141,7 @@ body {
         color: transparent;
         opacity: 1;
     }
-    
+
     #home-page ul li:nth-child(4) {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
         background-clip: text;
@@ -149,7 +149,7 @@ body {
         color: transparent;
         opacity: 1;
     }
-    
+
     #home-page ul li:nth-child(5) {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
         background-clip: text;
@@ -324,6 +324,22 @@ body {
     color: var(--text-secondary);
     font-size: 0.75rem;
     margin-right: 0.5rem;
+}
+
+#blog-page p {
+    margin-bottom: 1em;
+}
+
+#blog-page hr {
+    margin-bottom: 1em;
+}
+
+#blog-page .blog-post-content p {
+    margin-bottom: 1em;
+}
+
+#blog-page .blog-post-content hr ~ p {
+    margin-bottom: 1em;
 }
 
 /* CV page styles */
