@@ -6,18 +6,71 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 
-/* Typography styles */
+/* Root variables for theme colors */
+:root {
+    /* Light theme colors */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --accent: #dc2626;
+    --border: rgba(0, 0, 0, 0.1);
+    --shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Component-specific colors */
+    --code-bg: #e5e7eb;
+    --code-text: #dc2626;
+    --glass-bg: rgba(0, 0, 0, 0.05);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --glass-hover: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme colors */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #030712;
+        --bg-secondary: rgba(255, 255, 255, 0.05);
+        --text-primary: #d1d5db;
+        --text-secondary: #9ca3af;
+        --accent: #ff0000;
+        --border: rgba(255, 255, 255, 0.2);
+        --shadow: rgba(0, 0, 0, 0.3);
+        
+        /* Component-specific colors */
+        --code-bg: #374151;
+        --code-text: #ff0000;
+        --glass-bg: rgba(255, 255, 255, 0.05);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --glass-hover: rgba(255, 255, 255, 0.15);
+    }
+}
+
+/* Base background colors */
+.bg-blue-900,
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography styles for home page */
 #home-page h1 {
     font-size: 2em;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
     background-clip: text;
     -webkit-background-clip: text;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 20px var(--shadow);
     transition: transform 0.1s ease-out;
     position: relative;
+}
+
+@media (prefers-color-scheme: dark) {
+    #home-page h1 {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    }
 }
 
 #home-page h1::before {
@@ -27,7 +80,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent 50%);
+    background: linear-gradient(135deg, var(--glass-border), transparent 50%);
     z-index: -1;
     border-radius: 8px;
     filter: blur(2px);
@@ -51,45 +104,78 @@
 #home-page ul li::before {
     content: "* ";
     margin-right: 0.5rem;
-    color: #ff0000;
+    color: var(--accent);
     font-weight: bold;
 }
 
+/* Light theme list items */
 #home-page ul li:nth-child(1) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.4));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--text-primary);
 }
 
 #home-page ul li:nth-child(2) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--text-secondary);
 }
 
 #home-page ul li:nth-child(3) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    opacity: 0.8;
+    color: var(--text-secondary);
 }
 
 #home-page ul li:nth-child(4) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    opacity: 0.6;
+    color: var(--text-secondary);
 }
 
 #home-page ul li:nth-child(5) {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    opacity: 0.5;
+    color: var(--text-secondary);
 }
 
+/* Dark theme list items with gradient */
+@media (prefers-color-scheme: dark) {
+    #home-page ul li:nth-child(1) {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.4));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 1;
+    }
+    
+    #home-page ul li:nth-child(2) {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 1;
+    }
+    
+    #home-page ul li:nth-child(3) {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 1;
+    }
+    
+    #home-page ul li:nth-child(4) {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 1;
+    }
+    
+    #home-page ul li:nth-child(5) {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 1;
+    }
+}
+
+/* Blog page styles */
 #blog-page h1,
 #blog-page h2,
 #blog-page h3,
@@ -100,7 +186,7 @@
 #blog-page code,
 #blog-page p,
 #blog-page li {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
@@ -167,8 +253,8 @@
 }
 
 #blog-page code {
-    background-color: #374151;
-    color: #ff0000;
+    background-color: var(--code-bg);
+    color: var(--code-text);
     padding: 0.125rem 0.25rem;
     border-radius: 0.25rem;
     font-family: 'Courier New', Courier, monospace;
@@ -198,12 +284,12 @@
 #blog-page ul li::before {
     content: "* ";
     margin-right: 0.5rem;
-    color: #ff0000;
+    color: var(--accent);
     font-weight: bold;
 }
 
 #blog-page .blog-site-title {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     font-weight: bold;
@@ -211,23 +297,24 @@
 }
 
 #blog-page .blog-nav-link {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     margin: 0 0.5rem;
 }
 
 #blog-page .blog-nav-link:hover {
-    color: #ffffff;
+    color: var(--text-primary);
+    opacity: 0.8;
 }
 
 #blog-page .blog-nav-separator {
-    color: #6b7280;
+    color: var(--text-secondary);
     margin: 0 0.5rem;
 }
 
 #blog-page .blog-post-title {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
     font-weight: bold;
@@ -236,28 +323,24 @@
 
 #blog-page .blog-post-title::before {
     content: "# ";
-    color: #ff0000;
+    color: var(--accent);
 }
 
 #blog-page .blog-post-meta {
-    color: #9ca3af;
+    color: var(--text-secondary);
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.875rem;
     margin-bottom: 2rem;
 }
 
-#blog-page .blog-post-tag {
-    color: #6b7280;
-    font-size: 0.75rem;
-    margin-right: 0.5rem;
-}
-
+#blog-page .blog-post-tag,
 #blog-page .post-tag {
-    color: #6b7280;
+    color: var(--text-secondary);
     font-size: 0.75rem;
     margin-right: 0.5rem;
 }
 
+/* CV page styles */
 #cv-page h1,
 #cv-page h2,
 #cv-page h3,
@@ -268,7 +351,7 @@
 #cv-page code,
 #cv-page p,
 #cv-page li {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
@@ -335,8 +418,8 @@
 }
 
 #cv-page code {
-    background-color: #374151;
-    color: #ff0000;
+    background-color: var(--code-bg);
+    color: var(--code-text);
     padding: 0.125rem 0.25rem;
     border-radius: 0.25rem;
     font-family: 'Courier New', Courier, monospace;
@@ -366,7 +449,7 @@
 #cv-page ul li::before {
     content: "* ";
     margin-right: 0.5rem;
-    color: #ff0000;
+    color: var(--accent);
     font-weight: bold;
 }
 
@@ -375,110 +458,43 @@
     position: fixed;
     top: 2rem;
     right: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #ff0000;
+    border: 1px solid var(--glass-border);
+    color: var(--accent);
     padding: 0.75rem;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px var(--shadow);
 }
 
 #cv-page .download-pdf-button:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--glass-hover);
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.2);
-    color: #ff3333;
+    box-shadow: 0 6px 20px var(--shadow);
 }
 
 #cv-page .download-pdf-button:active {
     transform: scale(0.95);
 }
 
-.bg-blue-900 {
-    background-color: #030712;
-}
-
-#home-page .social-links {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    position: relative;
-}
-
-#home-page .social-links::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
-    border-radius: 1rem 1rem 0 0;
-    pointer-events: none;
-}
-
-#home-page .social-icon {
-    color: #d1d5db;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#home-page .social-icon:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.15);
-    transform: scale(1.1);
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
-}
-
-/* Scroll hint styling */
-#home-page .scroll-hint {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-#home-page .scroll-hint:hover {
-    color: rgba(255, 255, 255, 0.6);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
-}
-
-
-/* Blog page social links - same as home page */
+/* Social links styling */
+#home-page .social-links,
 #blog-page .social-links {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    background: linear-gradient(135deg, var(--glass-hover), var(--glass-bg));
     backdrop-filter: blur(10px);
     border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 32px var(--shadow);
     position: relative;
 }
 
+#home-page .social-links::before,
 #blog-page .social-links::before {
     content: '';
     position: absolute;
@@ -486,93 +502,57 @@
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(135deg, var(--glass-border), transparent);
     border-radius: 1rem 1rem 0 0;
     pointer-events: none;
 }
 
+#home-page .social-icon,
 #blog-page .social-icon {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-size: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
 }
 
-#home-page .social-icon:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.15);
-    transform: scale(1.1);
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
-}
-
-/* Scroll hint styling */
-#home-page .scroll-hint {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-#home-page .scroll-hint:hover {
-    color: rgba(255, 255, 255, 0.6);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
-}
-
-/* Blog page social links - same as home page */
-#blog-page .social-links {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    position: relative;
-}
-
-#blog-page .social-links::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
-    border-radius: 1rem 1rem 0 0;
-    pointer-events: none;
-}
-
-#blog-page .social-icon {
-    color: #d1d5db;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
+#home-page .social-icon:hover,
 #blog-page .social-icon:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--glass-hover);
     transform: scale(1.1);
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px var(--shadow);
 }
 
+/* Scroll hint styling */
+#home-page .scroll-hint {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--glass-bg), transparent);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+#home-page .scroll-hint:hover {
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--glass-hover), var(--glass-bg));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* CV page specific background adjustments */
+#cv-page .bg-white {
+    background: var(--bg-secondary);
+    backdrop-filter: blur(10px);
+}
+
+/* Print styles remain unchanged */
 @media print {
     #cv-page {
         color: #000 !important;
