@@ -40,6 +40,10 @@ Passionate about elegant solutions that solve real problems without over-enginee
 
 ## Work experience
 
+### **Founder, CEO**, Aissac (d/b/a ZenCash) `Present`
+
+Leading cryptocurrency trading operations, following guidance from certified investment advisors while managing client portfolios. Utilizing established cryptocurrency trading platforms to execute strategic trades and deliver value for clients.
+
 ### **Co-Founder / CTO**, Kensan.ai `Present`
 
 Leading technical development and strategy for AI-powered solutions.
