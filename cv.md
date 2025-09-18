@@ -44,9 +44,9 @@ Passionate about elegant solutions that solve real problems without over-enginee
 
 Leading cryptocurrency trading operations, following guidance from certified investment advisors while managing client portfolios. Utilizing established cryptocurrency trading platforms to execute strategic trades and deliver value for clients.
 
-### **Co-Founder / CTO**, Kensan.ai `Present`
+### **Co-Founder / CTO**, Kensan.ai `Sep 2025`
 
-Leading technical development and strategy for AI-powered solutions.
+Led technical development and strategy for AI-powered solutions.
 
 ### **Co-Founder / CTO**, FlySwiftTail.com `Present`
 
