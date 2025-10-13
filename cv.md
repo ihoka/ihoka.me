@@ -44,9 +44,23 @@ Passionate about elegant solutions that solve real problems without over-enginee
 
 Leading cryptocurrency trading operations, following guidance from certified investment advisors while managing client portfolios. Utilizing established cryptocurrency trading platforms to execute strategic trades and deliver value for clients.
 
-### **Co-Founder / CTO**, Kensan.ai `Sep 2025`
+### **Fractional CTO**, Tory, LLC `Oct 2025 - Present`
 
-Led technical development and strategy for AI-powered solutions.
+Strategic Technology Leadership:
+
+- Define and execute TORY's technical vision and product roadmap
+- Oversee all technology architecture decisions and infrastructure
+- Lead AI/ML feature development and integration strategy
+- Ensure scalability and performance as we grow to 500K+ ARR
+- Guide build vs. buy decisions for technology components
+
+Product & Engineering Excellence:
+
+- Maintain 99.5%+ uptime for production systems
+- Ensure 90%+ on-time delivery of planned releases
+- Drive crash-free rate above 99% through quality engineering
+- Manage technical debt with quarterly assessment and reduction plans
+- Oversee iOS app evolution, Android and web platform launch preparation
 
 ### **Co-Founder / CTO**, FlySwiftTail.com `Present`
 
