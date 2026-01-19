@@ -15,7 +15,8 @@
       "Bash(grep:*)",
       "Bash(curl:*)",
       "Bash(bundle exec jekyll:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Skill(superpowers:brainstorming)"
     ],
     "deny": []
   }
