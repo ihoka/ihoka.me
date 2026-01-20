@@ -28,13 +28,15 @@ This is fundamentally about **inverting** the natural dependency flow. Without D
 Here's what this looks like:
 
 **Without DIP:**
-```
+
+```txt
 High-Level Module → Low-Level Module
 (dependencies point toward detail)
 ```
 
 **With DIP:**
-```
+
+```txt
 High-Level Module → Interface ← Low-Level Module
 (dependencies point toward abstraction)
 ```
@@ -45,7 +47,7 @@ The key insight: this inversion is only possible because of polymorphism. Langua
 
 Let's see why this matters with a concrete example. Consider a reporting system:
 
-```
+```txt
 ReportGenerator → MySQLDatabase
 ```
 
@@ -59,7 +61,7 @@ The problem: policy is coupled to mechanism. The high-level module (what reports
 
 Now apply DIP:
 
-```
+```txt
 ReportGenerator → DatabaseInterface ← MySQLAdapter
                                     ← PostgreSQLAdapter
 ```
@@ -67,6 +69,7 @@ ReportGenerator → DatabaseInterface ← MySQLAdapter
 `ReportGenerator` defines `DatabaseInterface`—the abstraction it needs. `MySQLAdapter` and `PostgreSQLAdapter` implement that interface.
 
 Notice what changed:
+
 - **Control flow** still goes from `ReportGenerator` to the database (at runtime)
 - **Dependency flow** is inverted: both `ReportGenerator` and the adapters depend on the interface
 - The high-level module now defines what it needs
@@ -121,18 +124,19 @@ The transformation: `ReportGenerator` is now stable. You can add PostgreSQL, Mon
 
 Here's the profound insight: **database adapters are implementation details**. Report generation is the high-level policy. Details must depend on policy, never the other way around.
 
-Without DIP, the policy depended on the detail—`ReportGenerator` knew about `MySQLDatabase`. This is architecturally backwards. The detail (how we store data) is less important than the policy (what reports we generate).
+Without DIP, the policy depended on the detail - `ReportGenerator` knew about `MySQLDatabase`. This is architecturally backwards. The detail (how we store data) is less important than the policy (what reports we generate).
 
 With DIP, we corrected this: the detail now depends on the abstraction defined by the policy.
 
 This matters because:
+
 - **Details are unstable** - Database technology changes, implementations evolve, new storage mechanisms emerge
 - **Policy is stable** - Business logic about report generation changes slowly
 - **Unstable things should depend on stable things** - This keeps change localized
 
 Look at what happened: the databases became plugins.
 
-```
+```txt
 [Core: ReportGenerator] → DatabaseInterface ← [Plugin: MySQLAdapter]
                                             ← [Plugin: PostgreSQLAdapter]
                                             ← [Plugin: MongoDBAdapter]
@@ -150,6 +154,7 @@ DIP doesn't just enable plugins—it creates architectural stability. Here's why
 Components with many incoming dependencies are hard to change. Every dependent component creates inertia. DIP exploits this to create stable architectures.
 
 Consider our example:
+
 - `DatabaseInterface`: depended upon by `ReportGenerator` + all database adapters
   - **Many dependents → hard to change → stable**
 - `MySQLAdapter`: depended upon by nothing except its interface
