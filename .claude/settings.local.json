@@ -16,7 +16,13 @@
       "Bash(curl:*)",
       "Bash(bundle exec jekyll:*)",
       "Bash(cat:*)",
-      "Skill(superpowers:brainstorming)"
+      "Skill(superpowers:brainstorming)",
+      "Bash(bundle exec rougify:*)",
+      "Bash(rougify help:*)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_close",
+      "mcp__plugin_playwright_playwright__browser_press_key"
     ],
     "deny": []
   }
