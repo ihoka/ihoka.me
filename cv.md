@@ -38,11 +38,17 @@ Passionate about elegant solutions that solve real problems without over-enginee
 - **Team Building & Leadership**: Hired and trained development teams of 20 engineers, establishing coding standards and architectural frameworks adopted company-wide
 - **Business-Critical Problem Solving**: Identified and fixed compound precision errors in tax systems, reducing company tax liability by £500k annually.
 
+## Portfolio
+
+Selected personal and open-source projects.
+
+- **[tacticaltrainer.eu](https://tacticaltrainer.eu)** `Closed source` - Training platform for tactical sports enthusiasts.
+- **[upwork-search](https://github.com/ihoka/upwork-search)** `TypeScript` - Search Upwork for jobs that fit you.
+- **[obsidian-mcp-server](https://github.com/ihoka/obsidian-mcp-server)** `Ruby` - MCP server providing access to an Obsidian vault.
+- **[sentry-agents](https://github.com/ihoka/sentry-agents)** `Ruby` - Sentry GenAI instrumentation for AI/LLM agents in Ruby applications.
+- **[ihoka.me](https://github.com/ihoka/ihoka.me)** `Jekyll` - Personal portfolio website.
+
 ## Work experience
-
-### **Founder, CEO**, Aissac (d/b/a ZenCash) `Present`
-
-Leading cryptocurrency trading operations, following guidance from certified investment advisors while managing client portfolios. Utilizing established cryptocurrency trading platforms to execute strategic trades and deliver value for clients.
 
 ### **Fractional CTO**, Tory, LLC `Oct 2025 - Present`
 
@@ -61,10 +67,6 @@ Product & Engineering Excellence:
 - Drive crash-free rate above 99% through quality engineering
 - Manage technical debt with quarterly assessment and reduction plans
 - Oversee iOS app evolution, Android and web platform launch preparation
-
-### **Co-Founder / CTO**, FlySwiftTail.com `Present`
-
-Building innovative aviation technology solutions.
 
 ### **Indie Developer**, ihoka.me ltd `Present`
 
