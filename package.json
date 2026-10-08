@@ -2,8 +2,8 @@
   "dependencies": {},
   "devDependencies": {
     "@prettier/plugin-ruby": "^4.0.4",
-    "@shopify/prettier-plugin-liquid": "^1.9.3",
+    "@shopify/prettier-plugin-liquid": "^1.11.2",
     "prettier-plugin-erb": "^0.4.0",
-    "prettier-plugin-tailwindcss": "^0.6.14"
+    "prettier-plugin-tailwindcss": "^0.8.1"
   }
 }
