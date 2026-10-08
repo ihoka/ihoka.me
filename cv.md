@@ -77,6 +77,10 @@ Building and launching independent software products:
 
 Returned to Not On The High Street on a contract in a Site Reliability Engineering role, focusing on platform reliability, observability, and infrastructure excellence.
 
+- Moved the Product platform to an event-based architecture, delivering real-time product updates to the search index instead of nightly batch updates. `AWS EventBridge`, `Lambda`, `DynamoDB`, `OpenSearch`, `Terraform`, `TypeScript`.
+- Migrated search from OpenSearch Serverless to managed OpenSearch, saving the business £30k/year.
+- Set up monitoring dashboards for the Product platform. `Datadog`.
+
 ### **Builder.ai**, Principal (Staff) Engineer `May 2023 – May 2025`
 
 Led technical transformation across 4 engineering teams focused on Application Assembly and Building Blocks platform serving hundreds of SME customers.
