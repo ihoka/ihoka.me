@@ -11,7 +11,7 @@ Cluj-Napoca, Romania
 
 ## Professional Summary
 
-**Software Engineer & Startup CTO** with 20+ years building scalable systems and leading technical transformation. Architected platforms serving 50M+ monthly users, designed frameworks managing 500+ software components, and established engineering practices that improved developer productivity across multiple organizations. Expert in "building the machine that builds the machine" - creating systems, processes, and teams that deliver exceptional products while avoiding over-engineering.
+**Software Engineer & Startup CTO** with 20+ years building scalable systems and leading technical transformation. Architected platforms serving 50M+ monthly users, designed frameworks managing 500+ software components, and established engineering practices that improved developer productivity across multiple organizations. Expert in "building the machine that builds the machine" – creating systems, processes, and teams that deliver exceptional products while avoiding over-engineering.
 
 ### Core Expertise
 
@@ -42,14 +42,14 @@ Passionate about elegant solutions that solve real problems without over-enginee
 
 Selected personal and open-source projects.
 
-- **[tacticaltrainer.eu](https://tacticaltrainer.eu)** `Closed source` - Training platform for tactical sports enthusiasts.
-- **[obsidian-mcp-server](https://github.com/ihoka/obsidian-mcp-server)** `Ruby` - MCP server providing access to an Obsidian vault.
-- **[sentry-agents](https://github.com/ihoka/sentry-agents)** `Ruby` - Sentry GenAI instrumentation for AI/LLM agents in Ruby applications.
-- **[ihoka.me](https://github.com/ihoka/ihoka.me)** `Jekyll` - Personal portfolio website.
+- **[tacticaltrainer.eu](https://tacticaltrainer.eu)** `Closed source` – Training platform for tactical sports enthusiasts.
+- **[obsidian-mcp-server](https://github.com/ihoka/obsidian-mcp-server)** `Ruby` – MCP server providing access to an Obsidian vault.
+- **[sentry-agents](https://github.com/ihoka/sentry-agents)** `Ruby` – Sentry GenAI instrumentation for AI/LLM agents in Ruby applications.
+- **[ihoka.me](https://github.com/ihoka/ihoka.me)** `Jekyll` – Personal portfolio website.
 
 ## Work experience
 
-### **Fractional CTO**, Tory, LLC `Oct 2025 - Present`
+### **Fractional CTO**, Tory, LLC `Oct 2025 – Present`
 
 Strategic Technology Leadership:
 
@@ -73,11 +73,11 @@ Building and launching independent software products:
 
 - **tacticaltrainer.eu**: Training platform for tactical sports enthusiasts.
 
-### **Site Reliability Engineer**, notonthehighstreet.com, London `Jan 2026 - Aug 2026`
+### **Site Reliability Engineer**, notonthehighstreet.com, London `Jan 2026 – Aug 2026`
 
 Returned to Not On The High Street on a contract in a Site Reliability Engineering role, focusing on platform reliability, observability, and infrastructure excellence.
 
-### **Builder.ai**, Principal (Staff) Engineer `May 2023 - May 2025`
+### **Builder.ai**, Principal (Staff) Engineer `May 2023 – May 2025`
 
 Led technical transformation across 4 engineering teams focused on Application Assembly and Building Blocks platform serving hundreds of SME customers.
 
@@ -100,33 +100,33 @@ Led technical transformation across 4 engineering teams focused on Application A
 - Built `Neo4j`-based dependency graph improving stack upgrade process efficiency and allowing Natasha AI to understand the dependencies between components using `MCP`.
 - Drove adoption of GenAI development tools across teams, modernising and improving developers' workflows. `Github Copilot`, `Roo Code`, `Cursor`.
 
-### **Solutions Architect**, notonthehighstreet.com, London `Apr 2022 - Apr 2023`
+### **Solutions Architect**, notonthehighstreet.com, London `Apr 2022 – Apr 2023`
 
 Transitioned from the role of Principal Engineer after the departure of the Head of Architecture, as it became apparent that the organisation was in need of a more structured architecture function.
 
 - Established a more structured architecture framework for the tech team.
 - Continued developing and evolving solution designs for the organisation.
-  - Product Catalogue: replatform from legacy system to become the aggregation point of product data - target architecture, solution design, implementation governance.
-  - Product Information Management: introduce new capabilities to enable better understanding of product taxonomy when indexing, and allow granular stock management - solution design, implemetation governance.
-  - Guest checkout: allow unregistered uses to place orders - solution design and implementation governance.
+  - Product Catalogue: replatform from legacy system to become the aggregation point of product data – target architecture, solution design, implementation governance.
+  - Product Information Management: introduce new capabilities to enable better understanding of product taxonomy when indexing, and allow granular stock management – solution design, implemetation governance.
+  - Guest checkout: allow unregistered uses to place orders – solution design and implementation governance.
 
-### **Principal Engineer**, notonthehighstreet.com, London `Feb 2020 - Apr 2022`
+### **Principal Engineer**, notonthehighstreet.com, London `Feb 2020 – Apr 2022`
 
 - New payment method ApplePay: target architecture, solution design and implementation governance.
 - New stock management capability: target architecture, solution design and implementation governance.
 - Rethink approach to asynchronous messaging, from a home-grown solution, to leveraging more of the AWS infrastructure, and reduce coupling.
 
-### **Senior Software Engineer**, notonthehighstreet.com, London `Jun 2018 - Jan 2020`
+### **Senior Software Engineer**, notonthehighstreet.com, London `Jun 2018 – Jan 2020`
 
 Hired initially as a senior Ruby engineer to work on payment systems, became de-facto tech lead of the Payment team.
 
-- Lead re-platforming projects for Basket and Checkout - extract systems from monolithic architecture into domain aligned components. Lead design and implementation for APIs, microservices based on Node.js, GraphQL.
+- Lead re-platforming projects for Basket and Checkout – extract systems from monolithic architecture into domain aligned components. Lead design and implementation for APIs, microservices based on Node.js, GraphQL.
 - Troubleshooted and fixed a compound precision and rounding problem in the tax system, which reduced the companies tax liability significantly.
 - Completed previously started implementation of gift card capability, using GiveX as an external provider.
 
 Skills: Ruby on Rails, Node.js, GraphQL, DynamoDB, CloudFormation, Docker, Ansible.
 
-### **CTO**, Digital Takeover, Dallas, TX `Mar 2015 - Mar 2018`
+### **CTO**, Digital Takeover, Dallas, TX `Mar 2015 – Mar 2018`
 
 Media/content startup, leveraging Facebook heaviliy to drive traffic, Digital Takeover owned 2 web properties driving 50 million monthly visitors at its height.
 
@@ -135,7 +135,7 @@ Media/content startup, leveraging Facebook heaviliy to drive traffic, Digital Ta
 - Web API serving up to 50MM visitors/month to enhance online magazine with social features: voting, popularity. Architecture, implementation. Ruby on Rails.
 - Custom online magazine theme for Wordpress. Implementation.
 
-### **CTO**, ZenCash.com, Dallas, TX `Aug 2011 - Mar 2015`
+### **CTO**, ZenCash.com, Dallas, TX `Aug 2011 – Mar 2015`
 
 ZenCash was an "Accounts Receivable CRM", a tool meant to help B2B collect payment from their clients faster, by means of a follow-up plan over email, phone and the post. ZenCash was started as a spin-off by the same owners as Blinksale. Through my consulting company, Aissac, I acted as the leader in technical strategy and development.
 
@@ -147,7 +147,7 @@ ZenCash was an "Accounts Receivable CRM", a tool meant to help B2B collect payme
 
 Skills: technical leadership, architecture, EventMachine (Ruby), RabbitMQ, Ruby on Rails, Ember.js, Jenkins, Chef (EngineYard), AWS (various services).
 
-### **CTO**, Blinksale.com, Dallas, TX `Jan 2011 - Dec 2018`
+### **CTO**, Blinksale.com, Dallas, TX `Jan 2011 – Dec 2018`
 
 Blinksale is an invoicing application, one of the first webapps built with Ruby on Rails.
 Through my consulting company, Aissac, I acted as the leader in technical strategy and development.
@@ -162,7 +162,7 @@ Through my consulting company, Aissac, I acted as the leader in technical strate
 
 Skills: technical leadership, architecture, Ruby on Rails, Ember.js, Jenkins, Chef (EngineYard), AWS (various services).
 
-### **Lead Developer**, Blinksale.com, Dallas, TX `Jan 2010 - Dec 2010`
+### **Lead Developer**, Blinksale.com, Dallas, TX `Jan 2010 – Dec 2010`
 
 First contact with the new owner of Blinksale, hired as lead developer.
 
@@ -174,4 +174,4 @@ Co-founded Aissac SRL, a small development shop focused on web development, usin
 
 ## Education
 
-### **BSE Automation and Computer Science**, Technical University of Cluj-Napoca, Romania `2000 - 2005`
+### **BSE Automation and Computer Science**, Technical University of Cluj-Napoca, Romania `2000 – 2005`
