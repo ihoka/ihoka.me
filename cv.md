@@ -7,7 +7,7 @@ image: /favicon.svg
 
 # [Istvan Hoka](/)
 
-London, UK
+Cluj-Napoca, Romania
 
 ## Professional Summary
 
@@ -74,9 +74,9 @@ Building and launching independent software products:
 
 - **tacticaltrainer.eu**: Training platform for tactical sports enthusiasts.
 
-### **Site Reliability Engineer**, notonthehighstreet.com, London `Jan 2026 - Present`
+### **Site Reliability Engineer**, notonthehighstreet.com, London `Jan 2026 - Aug 2026`
 
-Returning to Not On The High Street in a Site Reliability Engineering role, focusing on platform reliability, observability, and infrastructure excellence.
+Returned to Not On The High Street on a contract in a Site Reliability Engineering role, focusing on platform reliability, observability, and infrastructure excellence.
 
 ### **Builder.ai**, Principal (Staff) Engineer `May 2023 - May 2025`
 
