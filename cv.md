@@ -43,7 +43,6 @@ Passionate about elegant solutions that solve real problems without over-enginee
 Selected personal and open-source projects.
 
 - **[tacticaltrainer.eu](https://tacticaltrainer.eu)** `Closed source` - Training platform for tactical sports enthusiasts.
-- **[upwork-search](https://github.com/ihoka/upwork-search)** `TypeScript` - Search Upwork for jobs that fit you.
 - **[obsidian-mcp-server](https://github.com/ihoka/obsidian-mcp-server)** `Ruby` - MCP server providing access to an Obsidian vault.
 - **[sentry-agents](https://github.com/ihoka/sentry-agents)** `Ruby` - Sentry GenAI instrumentation for AI/LLM agents in Ruby applications.
 - **[ihoka.me](https://github.com/ihoka/ihoka.me)** `Jekyll` - Personal portfolio website.
