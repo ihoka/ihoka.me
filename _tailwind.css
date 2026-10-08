@@ -699,16 +699,24 @@ body {
     font-family: var(--cv-font);
 }
 
+/* Medium, not semibold: run-in labels shouldn't turn into dark blocks of mono */
 #cv-page strong {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-strong);
+}
+
+#cv-page h1 strong,
+#cv-page h2 strong,
+#cv-page h3 strong,
+#cv-page h4 strong {
+    font-weight: 600;
 }
 
 #cv-page em {
     font-style: italic;
 }
 
-@media screen {
+@media all {
     #cv-page .cv-paper {
         width: 100%;
         max-width: 8.5in;
@@ -717,7 +725,7 @@ body {
         background: var(--bg-secondary);
         box-shadow: 0 25px 50px -12px var(--shadow);
         font-size: 0.875rem;
-        line-height: 1.7;
+        line-height: 1.65;
     }
 
     /* Headings */
@@ -746,9 +754,14 @@ body {
         font-weight: 600;
         letter-spacing: -0.02em;
         margin-bottom: 0.25rem;
+        /* Hang the link's "[" so the name aligns with the text column */
+        text-indent: -1ch;
     }
 
-    #cv-page h1::before { content: "#"; }
+    #cv-page h1::before {
+        content: "#";
+        padding-right: 2ch;
+    }
 
     #cv-page h1 + p {
         color: var(--text-secondary);
@@ -756,7 +769,7 @@ body {
     }
 
     #cv-page h2 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         font-weight: 600;
         margin-top: 3.5rem;
         margin-bottom: 1rem;
@@ -777,6 +790,11 @@ body {
     /* Section headings (no job title inside) carry their own weight */
     #cv-page h3:not(:has(strong)) {
         font-weight: 600;
+    }
+
+    /* Roles (headings with a bold title) get more air between them */
+    #cv-page h3:has(strong) {
+        margin-top: 3rem;
     }
 
     /* Dates on job headings sit on the right edge, like a timeline */
@@ -863,9 +881,11 @@ body {
     }
 
     /* Inline code: tech tags and dates, quiet rather than boxed */
+    /* line-height 1 keeps the smaller code text from stretching its line box */
     #cv-page code {
         color: var(--text-code);
         font-size: 0.8125rem;
+        line-height: 1;
     }
 
     #cv-page code::before,
@@ -913,7 +933,7 @@ body {
     }
 
     /* Narrow screens: no room for a hanging margin, so markers go inline */
-    @media (max-width: 640px) {
+    @media screen and (max-width: 640px) {
         #cv-page .cv-paper {
             min-height: 0;
             padding: 4.5rem 1.25rem 3rem;
@@ -930,6 +950,11 @@ body {
 
         #cv-page h1 {
             font-size: 1.5rem;
+            text-indent: 0;
+        }
+
+        #cv-page h1::before {
+            padding-right: 1ch;
         }
 
         #cv-page h3 > code:last-child {
@@ -1065,118 +1090,160 @@ body {
     opacity: 0.8;
 }
 
-/* Print styles remain unchanged */
+/*
+ * CV print / PDF: the paper edition of the screen design.
+ * Same typeface, dimmed markdown syntax and hanging markers; ink on white,
+ * a real type scale, and natural page flow.
+ */
 @media print {
-    #cv-page {
-        color: #000 !important;
-        background: white !important;
-        margin: 0 !important;
-        padding: 0 !important;
+    @page {
+        size: letter;
+        margin: 0.6in 0.6in 0.65in 0.5in;
+
+        /* Defining margin boxes replaces the browser's URL/date header and footer */
+        @top-right {
+            content: "ihoka.me/cv";
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 7pt;
+            color: #9ca3af;
+        }
+
+        @bottom-left {
+            content: "Istvan Hoka, CV";
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 7pt;
+            color: #9ca3af;
+        }
+
+        @bottom-right {
+            content: counter(page) " / " counter(pages);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 7pt;
+            color: #9ca3af;
+        }
     }
 
+    #cv-page {
+        --bg-primary: #ffffff;
+        --bg-secondary: #ffffff;
+        --text-primary: #1f2937;
+        --text-secondary: #4b5563;
+        --text-strong: #000000;
+        --text-syntax: #9ca3af;
+        --text-code: #374151;
+        --accent: #b91c1c;
+        display: block;
+        min-height: 0;
+        background: #ffffff;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    #cv-page > div {
+        max-width: none;
+        margin: 0;
+    }
+
+    /* Markers drawn into the @page margin get clipped, so they hang into this padding */
     #cv-page .cv-paper {
-        background: white !important;
-        box-shadow: none !important;
-        margin: 0 !important;
-        padding: 0.5in !important;
-        width: 100% !important;
-        min-height: auto !important;
+        max-width: none;
+        min-height: 0;
+        padding: 0 0 0 0.4in;
+        background: none;
+        box-shadow: none;
+        font-size: 8.5pt;
+        line-height: 12.5pt;
+    }
+
+    #cv-page h1 {
+        font-size: 18pt;
+        margin-bottom: 1pt;
+        text-indent: 0;
+    }
+
+    #cv-page h1::before {
+        padding-right: 1ch;
+    }
+
+    /* The home link means nothing on paper */
+    #cv-page h1 a::after {
+        content: "]";
+    }
+
+    #cv-page h1 + p {
+        font-size: 8.5pt;
+    }
+
+    #cv-page h2 {
+        font-size: 11pt;
+        margin-top: 24pt;
+        margin-bottom: 6pt;
+    }
+
+    #cv-page h3 {
+        font-size: 9pt;
+        margin-top: 11pt;
+        margin-bottom: 3pt;
+    }
+
+    #cv-page h3:has(strong) {
+        margin-top: 17pt;
+    }
+
+    #cv-page h2 + h3,
+    #cv-page h2 + h3:has(strong) {
+        margin-top: 6pt;
+    }
+
+    #cv-page h3 > code:last-child {
+        font-size: 8pt;
+        line-height: 1.55;
+    }
+
+    #cv-page h4 {
+        font-size: 8.5pt;
+        margin-top: 7pt;
+        margin-bottom: 1pt;
+    }
+
+    #cv-page p {
+        margin-bottom: 4pt;
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Keep lead-ins like "Strategic Technology Leadership:" with their list */
+    #cv-page p:has(+ ul) {
+        break-after: avoid;
+    }
+
+    #cv-page ul {
+        margin: 3pt 0 5pt;
+    }
+
+    #cv-page ul ul {
+        margin: 1pt 0;
+    }
+
+    #cv-page ul li {
+        margin: 2.5pt 0;
+        break-inside: avoid;
+    }
+
+    #cv-page code {
+        font-size: 7.75pt;
     }
 
     #cv-page h1,
     #cv-page h2,
     #cv-page h3,
-    #cv-page h4,
-    #cv-page strong,
-    #cv-page em,
-    #cv-page a,
-    #cv-page code,
-    #cv-page p,
-    #cv-page li {
-        color: #000 !important;
-        font-size: 9pt !important;
-        line-height: 1.1 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    #cv-page h1 {
-        font-size: 14pt !important;
-        margin-bottom: 6pt !important;
-        page-break-after: avoid;
-    }
-
-    #cv-page h2 {
-        font-size: 12pt !important;
-        margin-top: 10pt !important;
-        margin-bottom: 4pt !important;
-        page-break-after: avoid;
-    }
-
-    #cv-page h3 {
-        font-size: 10pt !important;
-        margin-top: 6pt !important;
-        margin-bottom: 3pt !important;
-        page-break-after: avoid;
-    }
-
     #cv-page h4 {
-        font-size: 9pt !important;
-        margin-top: 4pt !important;
-        margin-bottom: 2pt !important;
-        page-break-after: avoid;
-    }
-
-    #cv-page p {
-        margin-bottom: 4pt !important;
-        orphans: 2;
-        widows: 2;
-    }
-
-    #cv-page ul {
-        margin: 3pt 0 !important;
-        padding-left: 12pt !important;
-    }
-
-    #cv-page ul li {
-        margin: 1pt 0 !important;
-        text-indent: -12pt !important;
-        padding-left: 12pt !important;
-        page-break-inside: avoid;
-    }
-
-    #cv-page code {
-        background-color: #e5e5e5 !important;
-        color: #b45309 !important;
-        padding: 1pt 2pt !important;
-        font-size: 8pt !important;
-        border-radius: 2pt !important;
-        font-weight: bold !important;
-    }
-
-    #cv-page h1::before,
-    #cv-page h2::before,
-    #cv-page h3::before,
-    #cv-page h4::before,
-    #cv-page a::before,
-    #cv-page a::after,
-    #cv-page code::before,
-    #cv-page code::after {
-        content: none !important;
-    }
-
-    #cv-page ul li::before {
-        content: "• " !important;
-        color: #000 !important;
-        margin-right: 4pt !important;
-    }
-
-    #cv-page h2:nth-of-type(2) {
-        page-break-before: always;
+        break-after: avoid;
+        break-inside: avoid;
     }
 
     /* Hide the download button when printing */
-    .print\\:hidden {
+    .print\:hidden {
         display: none !important;
     }
 }
