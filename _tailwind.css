@@ -17,6 +17,9 @@
     --accent: #dc2626;
     --border: rgba(0, 0, 0, 0.1);
     --shadow: rgba(0, 0, 0, 0.1);
+    --text-strong: #030712;
+    --text-syntax: #9ca3af;
+    --text-code: #374151;
 
     /* Component-specific colors */
     --code-bg: #e5e7eb;
@@ -36,6 +39,9 @@
         --accent: #ff0000;
         --border: rgba(255, 255, 255, 0.2);
         --shadow: rgba(0, 0, 0, 0.3);
+        --text-strong: #f3f4f6;
+        --text-syntax: #6b7280;
+        --text-code: #e5e7eb;
 
         /* Component-specific colors */
         --code-bg: #374151;
@@ -667,7 +673,15 @@ body {
   background-color: #49483e;
 }
 
-/* CV page styles */
+/*
+ * CV page: the CV reads like a markdown file open in a good editor.
+ * Syntax (#, [](), backticks) stays visible but recedes; the content leads.
+ * Heading markers and bullets hang in the left margin so all text shares one edge.
+ */
+#cv-page {
+    --cv-font: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+}
+
 #cv-page h1,
 #cv-page h2,
 #cv-page h3,
@@ -682,128 +696,266 @@ body {
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#cv-page h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-#cv-page h1::before {
-    content: "# ";
-}
-
-#cv-page h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-#cv-page h2::before {
-    content: "## ";
-}
-
-#cv-page h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-#cv-page h3::before {
-    content: "### ";
-}
-
-#cv-page h4 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-}
-
-#cv-page h4::before {
-    content: "#### ";
+    font-family: var(--cv-font);
 }
 
 #cv-page strong {
-    font-weight: bold;
+    font-weight: 600;
+    color: var(--text-strong);
 }
 
 #cv-page em {
     font-style: italic;
 }
 
-#cv-page a::before {
-    content: "[";
-}
+@media screen {
+    #cv-page .cv-paper {
+        width: 100%;
+        max-width: 8.5in;
+        min-height: 11in;
+        padding: 4rem 4.5rem 5rem;
+        background: var(--bg-secondary);
+        box-shadow: 0 25px 50px -12px var(--shadow);
+        font-size: 0.875rem;
+        line-height: 1.7;
+    }
 
-#cv-page a::after {
-    content: "](" attr(href) ")";
-}
+    /* Headings */
+    #cv-page h1,
+    #cv-page h2,
+    #cv-page h3,
+    #cv-page h4 {
+        position: relative;
+        color: var(--text-strong);
+        line-height: 1.3;
+    }
 
-#cv-page code {
-    background-color: var(--code-bg);
-    color: var(--code-text);
-    padding: 0.125rem 0.25rem;
-    border-radius: 0.25rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
+    #cv-page h1::before,
+    #cv-page h2::before,
+    #cv-page h3::before,
+    #cv-page h4::before {
+        position: absolute;
+        right: 100%;
+        padding-right: 1ch;
+        color: var(--text-syntax);
+        font-weight: normal;
+    }
 
-#cv-page code::before {
-    content: "`";
-}
+    #cv-page h1 {
+        font-size: 1.875rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.25rem;
+    }
 
-#cv-page code::after {
-    content: "`";
-}
+    #cv-page h1::before { content: "#"; }
 
-#cv-page ul {
-    list-style: none;
-    padding-left: 2rem;
-    margin: 1rem 0;
-}
+    #cv-page h1 + p {
+        color: var(--text-secondary);
+        margin-bottom: 0;
+    }
 
-#cv-page ul li {
-    margin: 0.25rem 0;
-    text-indent: -2rem;
-    padding-left: 2rem;
-}
+    #cv-page h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+    }
 
-#cv-page ul li::before {
-    content: "* ";
-    margin-right: 0.5rem;
-    color: var(--accent);
-    font-weight: bold;
-}
+    #cv-page h2::before { content: "##"; }
 
-/* Download PDF button styling */
-#cv-page .download-pdf-button {
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--glass-border);
-    color: var(--accent);
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 16px var(--shadow);
-}
+    #cv-page h3 {
+        font-size: 0.9375rem;
+        font-weight: normal;
+        margin-top: 2.25rem;
+        margin-bottom: 0.5rem;
+        display: flow-root;
+    }
 
-#cv-page .download-pdf-button:hover {
-    background: var(--glass-hover);
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px var(--shadow);
-}
+    #cv-page h3::before { content: "###"; }
 
-#cv-page .download-pdf-button:active {
-    transform: scale(0.95);
+    /* Section headings (no job title inside) carry their own weight */
+    #cv-page h3:not(:has(strong)) {
+        font-weight: 600;
+    }
+
+    /* Dates on job headings sit on the right edge, like a timeline */
+    #cv-page h3 > code:last-child {
+        float: right;
+        padding-left: 2ch;
+        /* 13px × 1.5 matches the heading's 15px × 1.3 line box */
+        line-height: 1.5;
+        font-size: 0.8125rem;
+        color: var(--text-secondary);
+        white-space: nowrap;
+    }
+
+    #cv-page h2 + h3 {
+        margin-top: 1.25rem;
+    }
+
+    #cv-page h4 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    #cv-page h4::before { content: "####"; }
+
+    /* Body */
+    #cv-page p {
+        margin-bottom: 0.75rem;
+    }
+
+    #cv-page ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0.5rem 0 1rem;
+    }
+
+    #cv-page ul ul {
+        padding-left: 2ch;
+        margin: 0.25rem 0;
+    }
+
+    #cv-page ul li {
+        position: relative;
+        margin: 0.375rem 0;
+    }
+
+    #cv-page ul li::before {
+        content: "*";
+        position: absolute;
+        right: 100%;
+        padding-right: 1ch;
+        color: var(--accent);
+        font-weight: 600;
+    }
+
+    /* Links keep their markdown syntax, dimmed */
+    #cv-page a {
+        color: inherit;
+        font-weight: inherit;
+        transition: color 0.15s ease;
+    }
+
+    #cv-page a::before {
+        content: "[";
+        color: var(--text-syntax);
+        font-weight: normal;
+    }
+
+    #cv-page a::after {
+        content: "](" attr(href) ")";
+        color: var(--text-syntax);
+        font-weight: normal;
+    }
+
+    #cv-page a:hover,
+    #cv-page a:focus-visible {
+        color: var(--accent);
+    }
+
+    #cv-page a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+
+    /* Inline code: tech tags and dates, quiet rather than boxed */
+    #cv-page code {
+        color: var(--text-code);
+        font-size: 0.8125rem;
+    }
+
+    #cv-page code::before,
+    #cv-page code::after {
+        content: "`";
+        color: var(--text-syntax);
+    }
+
+    /* Download PDF button */
+    #cv-page .download-pdf-button {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 10;
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border);
+        color: var(--accent);
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+        box-shadow: 0 4px 16px var(--shadow);
+    }
+
+    #cv-page .download-pdf-button:hover {
+        background: var(--glass-hover);
+        transform: scale(1.05);
+    }
+
+    #cv-page .download-pdf-button:active {
+        transform: scale(0.95);
+    }
+
+    #cv-page .download-pdf-button:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #cv-page .download-pdf-button,
+        #cv-page a {
+            transition: none;
+        }
+    }
+
+    /* Narrow screens: no room for a hanging margin, so markers go inline */
+    @media (max-width: 640px) {
+        #cv-page .cv-paper {
+            min-height: 0;
+            padding: 4.5rem 1.25rem 3rem;
+            box-shadow: none;
+        }
+
+        #cv-page h1::before,
+        #cv-page h2::before,
+        #cv-page h3::before,
+        #cv-page h4::before {
+            position: static;
+            padding-right: 1ch;
+        }
+
+        #cv-page h1 {
+            font-size: 1.5rem;
+        }
+
+        #cv-page h3 > code:last-child {
+            float: none;
+            display: block;
+            padding-left: 0;
+            margin-top: 0.125rem;
+        }
+
+        #cv-page ul {
+            padding-left: 2ch;
+        }
+
+        #cv-page ul li::before {
+            padding-right: 0.75ch;
+        }
+
+        #cv-page a {
+            overflow-wrap: anywhere;
+        }
+
+        #cv-page .download-pdf-button {
+            top: 1rem;
+            right: 1rem;
+        }
+    }
 }
 
 /* Social links styling */
@@ -873,12 +1025,6 @@ body {
     box-shadow: 0 4px 12px var(--shadow);
 }
 
-/* CV page specific background adjustments */
-#cv-page .bg-white {
-    background: var(--bg-secondary);
-    backdrop-filter: blur(10px);
-}
-
 /* Contact page styles */
 #contact-page h1,
 #contact-page h2,
@@ -928,7 +1074,7 @@ body {
         padding: 0 !important;
     }
 
-    #cv-page .bg-white {
+    #cv-page .cv-paper {
         background: white !important;
         box-shadow: none !important;
         margin: 0 !important;
