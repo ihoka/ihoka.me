@@ -1,6 +1,4 @@
 [tools]
-gh = "latest"
-lazygit = "latest"
 bun = "latest"
 
 [tasks."install"]
