@@ -6,7 +6,7 @@ categories: blog
 tags: [ruby, dsl, ai, programming]
 ---
 
-I have been building a training app based on the Tactical Barbell books. It plans strength and conditioning sessions, and it pushes them to your watch.
+I have been building [Tactical Trainer](https://tacticaltrainer.eu), a training app based on the Tactical Barbell books. It plans strength and conditioning sessions, and it pushes them to your watch.
 
 For a long time, the app described its own domain in five different formats. Ruby classes for barbell periodization. Hash literals for which lifts make up a session. More hash literals for rotation presets. Markdown files, read by a hand-written parser, for the conditioning workouts. A flat value object for a single movement's dosage. A 747-line generator glued it all together.
 
